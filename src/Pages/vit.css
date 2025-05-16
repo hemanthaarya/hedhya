@@ -42,12 +42,69 @@
     align-items: center;
     margin-top: 20px;
     gap: 50px;
-    font-size: 20px;
-    font-weight: 1000;
 }
 .options h4{
     cursor: pointer;
+    font-size: 20px;
+    font-weight: 1000;
+    color: #034268;
 }
+.dropdown{
+    width: 1000px;
+    height: 470px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 80px;
+}
+.dropdown div{
+    width: 240px;
+}
+.dropdown li{
+    list-style: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #7b9fb6;
+    padding-bottom:5px ;
+}
+.deropdown ul{
+    align-items:flex-start;
+}
+.dropdown li:hover{
+    color: #034268;
+    cursor: pointer;
+}
+.dropdown h2{
+    color: #034268;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+.dropdown h2:hover{
+    border-bottom: 2px solid #034268;
+}
+.graphic ul{
+    margin-top: 55px;
+}
+.marketing ul{
+    margin-top: 50px;
+}
+.data{
+    margin-right: 30px;
+}
+.data ul{
+    margin-top: 50px;
+}
+.service:hover .dropdown{
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+}
+
 .img{
     width:97vw;
     height: 80vh;
