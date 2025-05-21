@@ -3,7 +3,7 @@ import Logo from '../logo.png';
 import IMG1 from '../img1.png';
 import IMG2 from '../img2.png';
 import './vit.css';
-import { BsTelephoneFill } from "react-icons/bs";
+import { BsTelephoneFill,BsFillChatTextFill,BsFillPinMapFill,BsWhatsapp,BsFacebook,BsTwitterX,BsLinkedin } from "react-icons/bs";
 import menuData from '../menuData';
 import Dropdown from './dropdown.jsx';
 import Logo1 from '../s-box1.png';
@@ -93,6 +93,50 @@ function Home() {
                         <p>We create stunning visuals that captivate and engage your audience, enhancing your brand identity.</p>
                         <button className='button'>Read More</button>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div className='footer'>
+            <div className='footer-up'>
+                <div className='contact'>
+                    <div className='c_title'>
+                        <div></div>
+                        <h1>Contact</h1>
+                    </div>
+                    <div>
+                        <h4><BsFillChatTextFill/>vitdhub@gmail.com</h4>
+                        <h4><BsFillPinMapFill/>Vijayawada, AndhraPradesh, 521137</h4>
+                    </div>
+                </div>
+                <div className='news_letter'>
+                    <div className='c_title'>
+                        <div></div>
+                        <h1>News Letter</h1>
+                    </div>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <textarea type='description' placeholder='Subscribe to our channel' className='input'/>
+                </div>
+                <div className='Pages'>
+                    <div className='c_title'>
+                        <div></div>
+                        <h1>Pages</h1>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                        <h4>About Us</h4>
+                        <h4>Services</h4>
+                        <h4>Blogs</h4>
+                        <h4>Contact</h4>
+                    </div>
+                </div>
+            </div>
+            <div className='footer-down'>
+                <img src={Logo} alt='logo' className='logo1'/>
+                <div className='icons'>
+                    <BsWhatsapp className='icon'/>
+                    <BsFacebook className='icon'/>
+                    <BsTwitterX className='icon'/>
+                    <BsLinkedin className='icon'/>
                 </div>
             </div>
         </div>
