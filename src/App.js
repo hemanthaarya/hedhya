@@ -13,6 +13,8 @@ function App() {
         <title>VIT HUB</title>
       </Helmet>
       <div>
+        <Home/>
+        <About/>
         <Contact/>
       </div>
     </>
