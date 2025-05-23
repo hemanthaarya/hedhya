@@ -2,6 +2,8 @@ import './App.css';
 import {Helmet} from 'react-helmet';
 import React from 'react';
 import About from './Pages/About.jsx';
+import Contact from './Pages/Contact.jsx';
+import Home from './Pages/HomePage.jsx';
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
         <title>VIT HUB</title>
       </Helmet>
       <div>
-        <About/>
+        <Contact/>
       </div>
     </>
   );
