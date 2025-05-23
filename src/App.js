@@ -1,5 +1,4 @@
 import './App.css';
-import Home from './Pages/HomePage.jsx';
 import {Helmet} from 'react-helmet';
 import React from 'react';
 import About from './Pages/About.jsx';
