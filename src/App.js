@@ -4,6 +4,7 @@ import React from 'react';
 import About from './Pages/About.jsx';
 import Contact from './Pages/Contact.jsx';
 import Home from './Pages/HomePage.jsx';
+import Services from './Pages/Services.jsx';
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
         <title>VIT HUB</title>
       </Helmet>
       <div>
-        <Home/>
-        <About/>
-        <Contact/>
+        <Home />
+        <About />
+        <Contact /> 
+        <Services />
       </div>
     </>
   );
