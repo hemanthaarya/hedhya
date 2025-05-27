@@ -68,26 +68,26 @@ function Home() {
                     </div>
                     <h2>___________</h2>
                 </div>
-                <div className='s-box'>
-                    <div className='s-box-1'>
+                <div className='h-box'>
+                    <div className='h-box-1'>
                         <img src={Logo1} alt="logo" className='logo-1'/>
                         <h3>Graphic Design</h3>
                         <p>We create stunning visuals that captivate and engage your audience, enhancing your brand identity.</p>
                         <button className='button'>Read More</button>
                     </div>
-                    <div className='s-box-1'>
+                    <div className='h-box-1'>
                         <img src={Logo2} alt="logo" className='logo-1'/>
                         <h3>Web & App Development</h3>
                         <p>We create stunning visuals that captivate and engage your audience, enhancing your brand identity.</p>
                         <button className='button'>Read More</button>
                     </div>
-                    <div className='s-box-1'>
+                    <div className='h-box-1'>
                         <img src={Logo3} alt="logo" className='logo-1'/>
                         <h3>Marketing Servies</h3>
                         <p>We create stunning visuals that captivate and engage your audience, enhancing your brand identity.</p>
                         <button className='button'>Read More</button>
                     </div>
-                    <div className='s-box-1'>
+                    <div className='h-box-1'>
                         <img src={Logo4} alt="logo" className='logo-1'/>
                         <h3>Data Analytics</h3>
                         <p>We create stunning visuals that captivate and engage your audience, enhancing your brand identity.</p>

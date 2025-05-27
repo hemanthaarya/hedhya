@@ -1,0 +1,228 @@
+import Logo from '../logo.png';
+import './vit.css';
+import { BsTelephoneFill,BsFillChatTextFill,BsFillPinMapFill,BsWhatsapp,BsFacebook,BsTwitterX,BsLinkedin } from "react-icons/bs";
+import menuData from '../menuData';
+import Dropdown from './dropdown.jsx';
+import IMG7 from '../img7.png';
+import ICON1 from '../Icon1.svg';
+import ICON2 from '../Icon2.svg';
+import ICON3 from '../Icon3.svg';
+import ICON4 from '../Icon4.svg';
+import ICON5 from '../Icon5.svg';
+import ICON6 from '../Icon6.svg';
+import Img9 from '../img9.webp';
+import Img10 from '../img10.png';
+import Img11 from '../img11.png';
+import Img12 from '../img12.png';
+import Img13 from '../img13.png';
+import Img14 from '../img14.webp';
+import { FaSearchengin,FaRegHandshake,FaRegThumbsUp } from "react-icons/fa6";
+import { GiMountedKnight } from "react-icons/gi";
+
+
+function Services() {
+  return (
+    <div>
+        <div className='header'>
+            <div className='navbar-1'>
+                <img src={Logo} alt='logo' className='logo'/>
+                <div className='details'>
+                    <BsTelephoneFill style={{width:'30px',height:'50px'}}/>
+                    <h3>+91 8886667850</h3> 
+                    <button className='button'>
+                        Get a Quote
+                    </button>
+                </div>
+            </div>
+            <div className='navbar-2'>
+                <div className='options'>
+                    <h4>Home</h4>
+                    <h4>About Us</h4>
+                    <div className='service'><h4>Services</h4>
+                            <Dropdown menuData={menuData}/>
+                    </div>
+                    <h4>Blogs</h4>
+                    <h4>Contact</h4>
+                </div>
+            </div>
+        </div>
+        <div className='S-content'>
+            <div>
+                <img src={IMG7} alt='img' className='img1'/>
+            </div>
+            <div className='s-text'>
+                <h1>
+                    Empowering brands with Creativity and Innovation
+                </h1>
+                <p>We immerse ourselves in your brand’s essence to craft bold, refined, and impactful creative solutions. 
+                    By fusing strategy with artistry, we deliver designs and content that captivate your audience and position your brand as a leader in a competitive world.</p>
+            </div>
+            <div className='s-boxes'>
+                <h1>Services we offered</h1>
+                <h1>___________________________</h1>
+                <div className='s-box-container'>
+                    <div className='s-box'>
+                        <div className='s-box-header'>
+                            <img src={ICON1} alt='Icon1'/>
+                            <div className='s-box-title'> Graphic Design</div>
+                        </div>
+                        <div className='s-box-description'>From logo design to full branding kits, we craft visually stunning materials that capture your brand’s essence and make a lasting impression. </div>
+                    </div>
+                    <div className='s-box'>
+                        <div className='s-box-header'>
+                            <img src={ICON2} alt='Icon1'/>
+                            <div className='s-box-title'> Content Creation</div>
+                        </div>
+                        <div className='s-box-description'>Custom website designs, responsive interfaces, and interactive landing pages that enhance user experience and drive results. </div>
+                    </div>
+                    <div className='s-box'>
+                        <div className='s-box-header'>
+                            <img src={ICON3} alt='Icon1'/>
+                            <div className='s-box-title'> Logo Design</div>
+                        </div>
+                        <div className='s-box-description'>Create professional promotional videos, explainer animations, and social media visuals that captivate and engage your audience. </div>
+                    </div>
+                    <div className='s-box'>
+                        <div className='s-box-header'>
+                            <img src={ICON4} alt='Icon1'/>
+                            <div className='s-box-title'> Web Development</div>
+                        </div>
+                        <div className='s-box-description'>Engage your audience with high-quality blogs, articles, social media posts, and infographics tailored to your brand’s goals and audience.</div>
+                    </div>
+                    <div className='s-box'>
+                        <div className='s-box-header'>
+                            <img src={ICON5} alt='Icon1'/>
+                            <div className='s-box-title'> UI/UX Design</div>
+                        </div>
+                        <div className='s-box-description'>Designing intuitive and user-friendly interfaces that prioritize seamless navigation and exceptional user experience. </div>
+                    </div>
+                    <div className='s-box'>
+                        <div className='s-box-header'>
+                            <img src={ICON6} alt='Icon1'/>
+                            <div className='s-box-title'> Custom Illustrations</div>
+                        </div>
+                        <div className='s-box-description'>Bring your vision to life with unique, hand-crafted illustrations designed to tell your brand’s story creatively. </div>
+                    </div>
+                </div>
+            </div>
+            <div className='approach'>
+                <h1>How we Approach?</h1>
+                <div className='a-container'>
+                    <div className='a-box' >
+                        <img src={Img9} alt='img9' className='a-img'/>
+                        <div>
+                            <h3>Brand Understanding</h3>
+                            <p>We dive deep into your brand’s vision and goals.</p>
+                        </div>
+                    </div>
+                    <div className='a-box' >
+                        <img src={Img10} alt='img9' className='a-img'/>
+                        <div>
+                            <h3>Brand Understanding</h3>
+                            <p>We dive deep into your brand’s vision and goals.</p>
+                        </div>
+                    </div>
+                    <div className='a-box' >
+                        <img src={Img11} alt='img9' className='a-img'/>
+                        <div>
+                            <h3>Brand Understanding</h3>
+                            <p>We dive deep into your brand’s vision and goals.</p>
+                        </div>
+                    </div>
+                    <div className='a-box' >
+                        <img src={Img12} alt='img9' className='a-img'/>
+                        <div>
+                            <h3>Brand Understanding</h3>
+                            <p>We dive deep into your brand’s vision and goals.</p>
+                        </div>
+                    </div>
+                    <div className='a-box' >
+                        <img src={Img13} alt='img9' className='a-img'/>
+                        <div>
+                            <h3>Brand Understanding</h3>
+                            <p>We dive deep into your brand’s vision and goals.</p>
+                        </div>
+                    </div>
+                    <div className='a-box' >
+                        <img src={Img14} alt='img9' className='a-img'/>
+                        <div>
+                            <h3>Brand Understanding</h3>
+                            <p>We dive deep into your brand’s vision and goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='n-container'>
+                <div>
+                    <FaSearchengin className='IC'/>
+                    <h3>Brand Identity</h3>
+                </div>
+                <div className='brd'></div>
+                <div>
+                    <FaRegHandshake className='IC'/>
+                    <h3>Customer Engagement</h3>
+                </div>
+                <div className='brd'></div>
+                <div>
+                    <FaRegThumbsUp className='IC'/>
+                    <h3>Professional Appeal</h3>
+                </div>
+                <div className='brd'></div>
+                <div>
+                    <GiMountedKnight className='IC'/>
+                    <h3>Competitive Edge</h3>
+                </div>
+            </div>
+            <div className='s-quote'>
+                <h1>"Let’s innovate, empower, and succeed—together."</h1>
+                <button>Let's Connect</button>
+            </div>
+        </div>
+        <div className='footer'>
+            <div className='footer-up'>
+                <div className='contact'>
+                    <div className='c_title'>
+                        <div></div>
+                        <h1>Contact</h1>
+                    </div>
+                    <div>
+                        <h4><BsFillChatTextFill/>vitdhub@gmail.com</h4>
+                        <h4><BsFillPinMapFill/>Vijayawada, AndhraPradesh, 521137</h4>
+                    </div>
+                </div>
+                <div className='news_letter'>
+                    <div className='c_title'>
+                        <div></div>
+                        <h1>News Letter</h1>
+                    </div>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <textarea type='description' placeholder='Subscribe to our channel' className='input'/>
+                </div>
+                <div className='Pages'>
+                    <div className='c_title'>
+                        <div></div>
+                        <h1>Pages</h1>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                        <h4>About Us</h4>
+                        <h4>Services</h4>
+                        <h4>Blogs</h4>
+                        <h4>Contact</h4>
+                    </div>
+                </div>
+            </div>
+            <div className='footer-down'>
+                <img src={Logo} alt='logo' className='logo1'/>
+                <div className='icons'>
+                    <BsWhatsapp className='icon'/>
+                    <BsFacebook className='icon'/>
+                    <BsTwitterX className='icon'/>
+                    <BsLinkedin className='icon'/>
+                </div>
+            </div>
+        </div>
+    </div>
+  );
+}
+export default Services;
