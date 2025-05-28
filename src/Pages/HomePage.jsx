@@ -10,6 +10,8 @@ import Logo1 from '../s-box1.png';
 import Logo2 from '../s-box2.png';
 import Logo3 from '../s-box3.png';
 import Logo4 from '../s-box4.png';
+import { Link } from 'react-router-dom';
+
 function Home() {
   return (
     <div className='main'>
@@ -20,19 +22,18 @@ function Home() {
                     <BsTelephoneFill style={{width:'30px',height:'50px'}}/>
                     <h3>+91 8886667850</h3> 
                     <button className='button'>
-                        Get a Quote
+                        <Link to='/contact' className='Link1'>Get a Quote</Link>
                     </button>
                 </div>
             </div>
             <div className='navbar-2'>
                 <div className='options'>
-                    <h4>Home</h4>
-                    <h4>About Us</h4>
-                    <div className='service'><h4>Services</h4>
+                    <h4><Link to='/' className='Link'>Home</Link></h4>
+                    <h4><Link to='/about' className='Link'>About Us</Link></h4>
+                    <div className='service'><h4><Link to='/services' className='Link'>Services</Link></h4>
                             <Dropdown menuData={menuData}/>
                     </div>
-                    <h4>Blogs</h4>
-                    <h4>Contact</h4>
+                    <h4><Link to='/contact' className='Link'>Contact</Link></h4>
                 </div>
             </div>
         </div>
@@ -57,7 +58,7 @@ function Home() {
                     <p>
                         Our expert team connects you with your audience, optimizes processes, and strengthens your business with precision and creativity. More than a service provider, we’re your trusted partner in transforming vision into success.
                     </p>
-                    <button className='button'>About us</button>
+                    <button className='button'><Link to='/about' className='Link1'>About us</Link></button>
                 </div>
             </div>
             <div className='services'>
@@ -73,25 +74,25 @@ function Home() {
                         <img src={Logo1} alt="logo" className='logo-1'/>
                         <h3>Graphic Design</h3>
                         <p>We create stunning visuals that captivate and engage your audience, enhancing your brand identity.</p>
-                        <button className='button'>Read More</button>
+                        <button className='button'><Link to='/services' className='Link1'>Read More</Link></button>
                     </div>
                     <div className='h-box-1'>
                         <img src={Logo2} alt="logo" className='logo-1'/>
                         <h3>Web & App Development</h3>
                         <p>We create stunning visuals that captivate and engage your audience, enhancing your brand identity.</p>
-                        <button className='button'>Read More</button>
+                        <button className='button'><Link to='/services' className='Link1'>Read More</Link></button>
                     </div>
                     <div className='h-box-1'>
                         <img src={Logo3} alt="logo" className='logo-1'/>
                         <h3>Marketing Servies</h3>
                         <p>We create stunning visuals that captivate and engage your audience, enhancing your brand identity.</p>
-                        <button className='button'>Read More</button>
+                        <button className='button'><Link to='/services' className='Link1'>Read More</Link></button>
                     </div>
                     <div className='h-box-1'>
                         <img src={Logo4} alt="logo" className='logo-1'/>
                         <h3>Data Analytics</h3>
                         <p>We create stunning visuals that captivate and engage your audience, enhancing your brand identity.</p>
-                        <button className='button'>Read More</button>
+                        <button className='button'><Link to='/services' className='Link1'>Read More</Link></button>
                     </div>
                 </div>
             </div>
@@ -122,11 +123,10 @@ function Home() {
                         <h1>Pages</h1>
                     </div>
                     <div>
-                        <h4>Home</h4>
-                        <h4>About Us</h4>
-                        <h4>Services</h4>
-                        <h4>Blogs</h4>
-                        <h4>Contact</h4>
+                        <h4><Link to='/' className='Link1'>Home</Link></h4>
+                        <h4><Link to='/about' className='Link1'>About Us</Link></h4>
+                        <h4><Link to='/services' className='Link1'>Services</Link></h4>
+                        <h4><Link to='/contact' className='Link1'>Contact</Link></h4>
                     </div>
                 </div>
             </div>

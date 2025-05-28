@@ -12,6 +12,7 @@ import menuData from '../menuData';
 import Dropdown from './dropdown.jsx';
 import IMG3 from '../img3.png';
 import IMG4 from '../img4.png';
+import { Link } from 'react-router-dom';
 
 
 function About() {
@@ -24,19 +25,18 @@ function About() {
                     <BsTelephoneFill style={{width:'30px',height:'50px'}}/>
                     <h3>+91 8886667850</h3> 
                     <button className='button'>
-                        Get a Quote
+                        <Link to='/contact' className='Link1'>Get a Quote</Link>
                     </button>
                 </div>
             </div>
             <div className='navbar-2'>
                 <div className='options'>
-                    <h4>Home</h4>
-                    <h4>About Us</h4>
-                    <div className='service'><h4>Services</h4>
+                    <h4><Link to='/' className='Link'>Home</Link></h4>
+                    <h4><Link to='/about' className='Link'>About Us</Link></h4>
+                    <div className='service'><h4><Link to='/services' className='Link'>Services</Link></h4>
                             <Dropdown menuData={menuData}/>
                     </div>
-                    <h4>Blogs</h4>
-                    <h4>Contact</h4>
+                    <h4><Link to='/contact' className='Link'>Contact</Link></h4>
                 </div>
             </div>
         </div>
@@ -160,11 +160,10 @@ function About() {
                         <h1>Pages</h1>
                     </div>
                     <div>
-                        <h4>Home</h4>
-                        <h4>About Us</h4>
-                        <h4>Services</h4>
-                        <h4>Blogs</h4>
-                        <h4>Contact</h4>
+                        <h4><Link to='/' className='Link1'>Home</Link></h4>
+                        <h4><Link to='/about' className='Link1'>About Us</Link></h4>
+                        <h4><Link to='/services' className='Link1'>Services</Link></h4>
+                        <h4><Link to='/contact' className='Link1'>Contact</Link></h4>
                     </div>
                 </div>
             </div>

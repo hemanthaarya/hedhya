@@ -2,6 +2,14 @@
     margin: 0;
  
 }
+.Link{
+    text-decoration: none;
+    color: #034268;
+}
+.Link1{
+    text-decoration: none;
+    color: white;
+}
 .header{
     display: flex;
     flex-direction: column;
@@ -50,12 +58,17 @@
     align-items: center;
     margin-top: 20px;
     gap: 50px;
+    text-decoration: none;
 }
 .options h4{
     cursor: pointer;
+    text-decoration: none;
     font-size: 20px;
     font-weight: 1000;
     color: #034268;
+}
+.options link{
+    text-decoration: none;
 }
 .dropdown{
     width: 1000px;
@@ -412,7 +425,7 @@
 }
 .img4{
     width: 600px;
-    height: 900px;
+    max-height: 900px;
 }
 .form1{
     margin-top: 40px;
