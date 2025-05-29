@@ -1,5 +1,5 @@
 import Logo from '../logo.png';
-import './vit.css';
+import './About.css';
 import { BsTelephoneFill,BsFillChatTextFill,BsFillPinMapFill,BsWhatsapp,BsFacebook,BsTwitterX,BsLinkedin } from "react-icons/bs";
 import { GiStairsGoal,GiMountainClimbing } from "react-icons/gi";
 import { TiGroup } from "react-icons/ti";

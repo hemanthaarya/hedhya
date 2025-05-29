@@ -1,5 +1,5 @@
 import Logo from '../logo.png';
-import './vit.css';
+import './Contact.css';
 import { BsTelephoneFill,BsFillChatTextFill,BsFillPinMapFill,BsWhatsapp,BsFacebook,BsTwitterX,BsLinkedin } from "react-icons/bs";
 import menuData from '../menuData';
 import Dropdown from './dropdown.jsx';
@@ -62,7 +62,7 @@ function Contact() {
                                 <option value='select'>Data Analytics</option>
                             </select>
                             <textarea type='description' placeholder='Message' className='input'/>
-                            <button className='button'>Submit <FaArrowRight/> </button>
+                            <button className='button'>Submit <FaArrowRight/></button>
                         </form>
                     </div>
                 </div>

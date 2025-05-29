@@ -1,5 +1,5 @@
 import Logo from '../logo.png';
-import './vit.css';
+import './Services.css';
 import { BsTelephoneFill,BsFillChatTextFill,BsFillPinMapFill,BsWhatsapp,BsFacebook,BsTwitterX,BsLinkedin } from "react-icons/bs";
 import menuData from '../menuData';
 import Dropdown from './dropdown.jsx';

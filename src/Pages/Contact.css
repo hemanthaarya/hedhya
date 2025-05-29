@@ -1,0 +1,56 @@
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.form-container{
+    margin-top: 100px;
+}
+.img-container-1{
+    max-width: 600px;
+    width: 600px;
+    max-height: 1000px;
+    height: 1000px;
+}
+.img4{
+    width: 600px;
+    max-height: 900px;
+}
+.form1{
+    margin-top: 40px;
+}
+.form1 input{
+    margin-left: 10px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+}
+.form2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.form2 input{
+    width: 820px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+}   
+.form2 select{
+    width: 830px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}   
+.form2 textarea{
+    width: 820px;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
