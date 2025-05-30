@@ -5,7 +5,7 @@ import IMG2 from '../img2.png';
 import './Home.css';
 import { BsTelephoneFill, BsFillChatTextFill, BsFillPinMapFill, BsWhatsapp, BsFacebook, BsTwitterX, BsLinkedin } from "react-icons/bs";
 import menuData from '../menuData';
-import Dropdown from './dropdown.jsx';
+import Dropdown from './dropdown.jsx'; 
 import Logo1 from '../s-box1.png';
 import Logo2 from '../s-box2.png';
 import Logo3 from '../s-box3.png';
@@ -23,7 +23,7 @@ function Home() {
         <div className='navbar-1'>
           <img src={Logo} alt='logo' className='logo' />
           <div className='details'>
-            <BsTelephoneFill style={{ width: '25px', height: '25px' }} />
+            <BsTelephoneFill className='phn'/>
             <h3>+91 8886667850</h3>
             <button className='button'>
               <Link to='/contact' className='Link1'>Get a Quote</Link>
@@ -48,10 +48,7 @@ function Home() {
           <div className={`mobile-menu ${menuOpen ? 'show' : ''}`}>
             <h4><Link to='/' className='Link' onClick={() => setMenuOpen(false)}>Home</Link></h4>
             <h4><Link to='/about' className='Link' onClick={() => setMenuOpen(false)}>About Us</Link></h4>
-            <div className='service'>
-              <h4><Link to='/services' className='Link' onClick={() => setMenuOpen(false)}>Services</Link></h4>
-              <Dropdown menuData={menuData} />
-            </div>
+            <h4><Link to='/services' className='Link' onClick={() => setMenuOpen(false)}>Services</Link></h4>
             <h4><Link to='/contact' className='Link' onClick={() => setMenuOpen(false)}>Contact</Link></h4>
           </div>
 
@@ -123,7 +120,6 @@ function Home() {
         <div className='footer-up'>
           <div className='contact'>
             <div className='c_title'>
-              <div></div>
               <h1>Contact</h1>
             </div>
             <div>
@@ -134,7 +130,6 @@ function Home() {
 
           <div className='news_letter'>
             <div className='c_title'>
-              <div></div>
               <h1>News Letter</h1>
             </div>
             <p>Subscribe to our newsletter for the latest updates and offers.</p>
@@ -143,14 +138,13 @@ function Home() {
 
           <div className='Pages'>
             <div className='c_title'>
-              <div></div>
               <h1>Pages</h1>
             </div>
-            <div>
-              <h4><Link to='/' className='Link1'>Home</Link></h4>
-              <h4><Link to='/about' className='Link1'>About Us</Link></h4>
-              <h4><Link to='/services' className='Link1'>Services</Link></h4>
-              <h4><Link to='/contact' className='Link1'>Contact</Link></h4>
+            <div className='pages'>
+              <div><Link to='/' className='Link1'>Home</Link></div>
+              <div><Link to='/about' className='Link1'>About Us</Link></div>
+              <div><Link to='/services' className='Link1'>Services</Link></div>
+              <div><Link to='/contact' className='Link1'>Contact</Link></div>
             </div>
           </div>
         </div>
