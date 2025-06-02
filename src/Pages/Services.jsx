@@ -1,8 +1,7 @@
 import Logo from '../logo.png';
 import './Services.css';
+import './Home.css'
 import { BsTelephoneFill,BsFillChatTextFill,BsFillPinMapFill,BsWhatsapp,BsFacebook,BsTwitterX,BsLinkedin } from "react-icons/bs";
-import menuData from '../menuData';
-import Dropdown from './dropdown.jsx';
 import IMG7 from '../img7.png';
 import ICON1 from '../Icon1.svg';
 import ICON2 from '../Icon2.svg';
@@ -16,36 +15,64 @@ import Img11 from '../img11.png';
 import Img12 from '../img12.png';
 import Img13 from '../img13.png';
 import Img14 from '../img14.webp';
+import { useState } from 'react';
 import { FaSearchengin,FaRegHandshake,FaRegThumbsUp } from "react-icons/fa6";
 import { GiMountedKnight } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 
 
 function Services() {
+    const [menuOpen, setMenuOpen] = useState(false);
+        
+    const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <div>
-        <div className='header'>
-            <div className='navbar-1'>
-                <img src={Logo} alt='logo' className='logo'/>
-                <div className='details'>
-                    <BsTelephoneFill style={{width:'30px',height:'50px'}}/>
-                    <h3>+91 8886667850</h3> 
-                    <button className='button'>
-                        <Link to='/contact' className='Link1'>Get a Quote</Link>
-                    </button>
-                </div>
-            </div>
-            <div className='navbar-2'>
-                <div className='options'>
-                    <h4><Link to='/' className='Link'>Home</Link></h4>
-                    <h4><Link to='/about' className='Link'>About Us</Link></h4>
-                    <div className='service'><h4><Link to='/services' className='Link'>Services</Link></h4>
-                            <Dropdown menuData={menuData}/>
-                    </div>
-                    <h4><Link to='/contact' className='Link'>Contact</Link></h4>
-                </div>
-            </div>
+        <header className='header'>
+        <div className='navbar-1'>
+          <img src={Logo} alt='logo' className='logo' />
+          <div className='details'>
+            <BsTelephoneFill className='phn'/>
+            <h3>+91 8886667850</h3>
+            <button className='button'>
+              <Link to='/contact' className='Link1'>Get a Quote</Link>
+            </button>
+          </div>
         </div>
+
+        <nav className='navbar-2'>
+          {/* Hamburger Icon visible on mobile only */}
+          <button 
+            className='options1' 
+            onClick={toggleMenu} 
+            aria-label={menuOpen ? "Close Menu" : "Open Menu"}
+            aria-expanded={menuOpen}
+          >
+            <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+            <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+            <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+          </button>
+
+          {/* Mobile Menu */}
+          <div className={`mobile-menu ${menuOpen ? 'show' : ''}`}>
+            <h4><Link to='/' className='Link' onClick={() => setMenuOpen(false)}>Home</Link></h4>
+            <h4><Link to='/about' className='Link' onClick={() => setMenuOpen(false)}>About Us</Link></h4>
+            <h4><Link to='/services' className='Link' onClick={() => setMenuOpen(false)}>Services</Link></h4>
+            <h4><Link to='/Education' className='Link' onClick={() => setMenuOpen(false)}>Education</Link></h4>
+            <h4><Link to='/contact' className='Link' onClick={() => setMenuOpen(false)}>Contact</Link></h4>
+          </div>
+
+          {/* Desktop Menu */}
+          <div className='options'>
+            <h4><Link to='/' className='Link'>Home</Link></h4>
+            <h4><Link to='/about' className='Link'>About Us</Link></h4>
+            <div className='service'>
+              <h4><Link to='/services' className='Link'>Services</Link></h4>
+            </div>
+            <h4><Link to='/Education' className='Link'>Eduacation & Training</Link></h4>
+            <h4><Link to='/contact' className='Link'>Contact</Link></h4>
+          </div>
+        </nav>
+      </header>
         <div className='S-content'>
             <div>
                 <img src={IMG7} alt='img' className='img1'/>
@@ -152,25 +179,24 @@ function Services() {
                     </div>
                 </div>
             </div>
-            <div className='n-container'>
-                <div>
-                    <FaSearchengin className='IC'/>
-                    <h3>Brand Identity</h3>
-                </div>
-                <div className='brd'></div>
-                <div>
-                    <FaRegHandshake className='IC'/>
-                    <h3>Customer Engagement</h3>
-                </div>
-                <div className='brd'></div>
-                <div>
-                    <FaRegThumbsUp className='IC'/>
-                    <h3>Professional Appeal</h3>
-                </div>
-                <div className='brd'></div>
-                <div>
-                    <GiMountedKnight className='IC'/>
-                    <h3>Competitive Edge</h3>
+            <div className='n-cont'>
+                <div className='n-container'>
+                    <div>
+                        <FaSearchengin className='IC'/>
+                        <h3>Brand Identity</h3>
+                    </div>
+                    <div>
+                        <FaRegHandshake className='IC'/>
+                        <h3>Customer Engagement</h3>
+                    </div>
+                    <div>
+                        <FaRegThumbsUp className='IC'/>
+                        <h3>Professional Appeal</h3>
+                    </div>
+                    <div style={{border:'none'}}>
+                        <GiMountedKnight className='IC'/>
+                        <h3>Competitive Edge</h3>
+                    </div>
                 </div>
             </div>
             <div className='s-quote'>
@@ -178,49 +204,49 @@ function Services() {
                 <button><Link to='/contact' className='Link1'>Let's Connect</Link></button>
             </div>
         </div>
-        <div className='footer'>
+        <footer className='footer'>
             <div className='footer-up'>
                 <div className='contact'>
-                    <div className='c_title'>
-                        <div></div>
-                        <h1>Contact</h1>
-                    </div>
-                    <div>
-                        <h4><BsFillChatTextFill/>vitdhub@gmail.com</h4>
-                        <h4><BsFillPinMapFill/>Vijayawada, AndhraPradesh, 521137</h4>
-                    </div>
+                <div className='c_title'>
+                    <h1>Contact</h1>
                 </div>
+                <div>
+                    <h4><BsFillChatTextFill /> vitdhub@gmail.com</h4>
+                    <h4><BsFillPinMapFill /> Vijayawada, AndhraPradesh, 521137</h4>
+                </div>
+                </div>
+
                 <div className='news_letter'>
-                    <div className='c_title'>
-                        <div></div>
-                        <h1>News Letter</h1>
-                    </div>
-                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
-                    <textarea type='description' placeholder='Subscribe to our channel' className='input'/>
+                <div className='c_title'>
+                    <h1>News Letter</h1>
                 </div>
+                <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                <textarea placeholder='Subscribe to our channel' className='input' />
+                </div>
+
                 <div className='Pages'>
-                    <div className='c_title'>
-                        <div></div>
-                        <h1>Pages</h1>
-                    </div>
-                    <div>
-                        <h4><Link to='/' className='Link1'>Home</Link></h4>
-                        <h4><Link to='/about' className='Link1'>About Us</Link></h4>
-                        <h4><Link to='/services' className='Link1'>Services</Link></h4>
-                        <h4><Link to='/contact' className='Link1'>Contact</Link></h4>
-                    </div>
+                <div className='c_title'>
+                    <h1>Pages</h1>
+                </div>
+                <div className='pages'>
+                    <div><Link to='/' className='Link1'>Home</Link></div>
+                    <div><Link to='/about' className='Link1'>About</Link></div>
+                    <div><Link to='/services' className='Link1'>Services</Link></div>
+                    <div><Link to='/contact' className='Link1'>Contact</Link></div>
+                </div>
                 </div>
             </div>
+
             <div className='footer-down'>
-                <img src={Logo} alt='logo' className='logo1'/>
+                <img src={Logo} alt='logo' className='logo1' />
                 <div className='icons'>
-                    <BsWhatsapp className='icon'/>
-                    <BsFacebook className='icon'/>
-                    <BsTwitterX className='icon'/>
-                    <BsLinkedin className='icon'/>
+                <BsWhatsapp className='icon' />
+                <BsFacebook className='icon' />
+                <BsTwitterX className='icon' />
+                <BsLinkedin className='icon' />
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
   );
 }

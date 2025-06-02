@@ -52,6 +52,7 @@ function About() {
                 <h4><Link to='/' className='Link' onClick={() => setMenuOpen(false)}>Home</Link></h4>
                 <h4><Link to='/about' className='Link' onClick={() => setMenuOpen(false)}>About Us</Link></h4>
                 <h4><Link to='/services' className='Link' onClick={() => setMenuOpen(false)}>Services</Link></h4>
+                <h4><Link to='/Education' className='Link' onClick={() => setMenuOpen(false)}>Education</Link></h4>
                 <h4><Link to='/contact' className='Link' onClick={() => setMenuOpen(false)}>Contact</Link></h4>
             </div>
 
@@ -63,6 +64,7 @@ function About() {
                 <h4><Link to='/services' className='Link'>Services</Link></h4>
                 <Dropdown menuData={menuData} />
                 </div>
+                <h4><Link to='/Education' className='Link'>Eduacation & Training</Link></h4>
                 <h4><Link to='/contact' className='Link'>Contact</Link></h4>
             </div>
             </nav>
@@ -187,7 +189,7 @@ function About() {
                 </div>
                 <div className='pages'>
                     <div><Link to='/' className='Link1'>Home</Link></div>
-                    <div><Link to='/about' className='Link1'>About Us</Link></div>
+                    <div><Link to='/about' className='Link1'>About</Link></div>
                     <div><Link to='/services' className='Link1'>Services</Link></div>
                     <div><Link to='/contact' className='Link1'>Contact</Link></div>
                 </div>
