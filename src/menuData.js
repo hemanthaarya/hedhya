@@ -20,7 +20,7 @@ const menuData = [
                  'Backend Development & API Integration',
                  'Performance Optimization & Maintenance',
             ],
-            'Marketing services':[
+            'Market Analysis':[
                  'Social Media Strategy & Management',
                  'Search Engine Optimization',
                  'Google Ads & Paid Campaigns',
@@ -29,13 +29,24 @@ const menuData = [
                  'Content Creation & Scheduling',
                  'Performance Monitoring & Analytics',
             ],
-            'Data Analytics':[
+            'Business Analytics':[
                  'Data Collection & Cleaning',
                  'Dashboard Creation',
                  'Customer & Sales Analytics',
                  'Predictive & Trend Analysis',
                  'Data Visualization & Custom Reports',
                  'Business Intelligence Solutions',
+            ],
+            'CA Services':[
+               'Income Tax Services',
+               'GST Services',
+               'Accounting & Bookkeeping',
+               'Company Law & ROC Services',
+               'Trusts, Societies & NGOs',
+               'Project Report & Loan Documentation',
+               'CSR Advisory',
+               'FCRA Services',
+               ' Other Regulatory Services',
             ]
         }
     },

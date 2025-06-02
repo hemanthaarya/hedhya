@@ -1,6 +1,6 @@
 import './App.css';
 import {Helmet} from 'react-helmet';
-import React from 'react';
+import Eduacation from './Pages/Education.jsx';
 import About from './Pages/About.jsx';
 import Contact from './Pages/Contact.jsx';
 import Home from './Pages/HomePage.jsx';
@@ -20,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/Education" element={<Eduacation/>}/>
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
