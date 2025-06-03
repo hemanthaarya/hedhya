@@ -6,6 +6,7 @@ import Contact from './Pages/Contact.jsx';
 import Home from './Pages/HomePage.jsx';
 import Services from './Pages/Services.jsx';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import ScrollToTop from './Pages/Scrollto.js';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </Helmet>
 
       <Router>
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
