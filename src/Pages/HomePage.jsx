@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo from '../logo.png';
-import IMG1 from '../img1.png';
 import IMG2 from '../img2.png';
+import ImageSlider from './ImageScroll.jsx';
 import './Home.css';
 import { BsTelephoneFill, BsFillChatTextFill, BsFillPinMapFill, BsWhatsapp, BsFacebook, BsTwitterX, BsLinkedin } from "react-icons/bs";
 import menuData from '../menuData';
@@ -69,7 +69,7 @@ function Home() {
 
       <main className='h-content'>
         <section className='h-img-container'>
-          <img src={IMG1} alt='banner' className='img1' />
+          <ImageSlider/>
         </section>
 
         <section className='we_are'>
@@ -146,6 +146,7 @@ function Home() {
               <div><Link to='/' className='Link1'>Home</Link></div>
               <div><Link to='/about' className='Link1'>About</Link></div>
               <div><Link to='/services' className='Link1'>Services</Link></div>
+              <div><Link to='/Education' className='Link1'>Education</Link></div>
               <div><Link to='/contact' className='Link1'>Contact</Link></div>
             </div>
           </div>

@@ -131,6 +131,7 @@ function Contact() {
                     <div><Link to='/' className='Link1'>Home</Link></div>
                     <div><Link to='/about' className='Link1'>About</Link></div>
                     <div><Link to='/services' className='Link1'>Services</Link></div>
+                    <div><Link to='/Education' className='Link1'>Education</Link></div>
                     <div><Link to='/contact' className='Link1'>Contact</Link></div>
                 </div>
                 </div>

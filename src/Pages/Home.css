@@ -245,6 +245,8 @@ body,html,.main{
     height: 50%;
     height: auto;
     border-radius: 12px;
+    display: flex;
+    overflow: hidden;
 
 }
 .img1{
@@ -333,7 +335,6 @@ body,html,.main{
 .s-text-back {
     position: absolute;
     top: -15px;
-    left: 30px;
     font-size: 4rem;
     font-weight: 800;
     color: #eaeaea;
@@ -345,7 +346,6 @@ body,html,.main{
     font-size: 2.5rem;
     font-weight: 700;
     background: linear-gradient(to right, #003366, #5e2a74, #af234a, #ff2e2e);
-    left: 50px;
     top: 30px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
