@@ -1,0 +1,177 @@
+import React, { useState } from 'react';
+import Logo from '../Images/logo.jpg';
+import IMG2 from '../Images/img2.jpg';
+import ImageSlider from './ImageScroll.jsx';
+import './Home.css';
+import { BsTelephoneFill,BsFillChatTextFill,BsFillPinMapFill,BsWhatsapp,BsFacebook,BsTwitterX,BsLinkedin,BsInstagram,BsTelegram } from "react-icons/bs";
+import Dropdown from './dropdown.jsx'; 
+import Logo1 from '../Images/s-box1.jpg';
+import Logo2 from '../Images/s-box2.jpg';
+import Logo3 from '../Images/s-box3.jpg';
+import Logo4 from '../Images/s-box4.jpg';
+import { Link } from 'react-router-dom';
+import menuData from '../menuData.js';
+
+function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  return (
+    <div className='main'>
+      <header className='header'>
+        <div className='navbar-1'>
+          <div>
+            <img src={Logo} alt='logo' className='logo' />
+            <h2>For Future Innovation</h2>
+          </div>
+          <div className='details'>
+            <BsTelephoneFill className='phn'/>
+            <h3>+91 8886667850</h3>
+            <button className='button'>
+              <Link to='/contact' className='Link1'>Get a Quote</Link>
+            </button>
+          </div>
+        </div>
+
+        <nav className='navbar-2'>
+          {/* Hamburger Icon visible on mobile only */}
+          <button 
+            className='options1' 
+            onClick={toggleMenu} 
+            aria-label={menuOpen ? "Close Menu" : "Open Menu"}
+            aria-expanded={menuOpen}
+          >
+            <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+            <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+            <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+          </button>
+
+          {/* Mobile Menu */}
+          <div className={`mobile-menu ${menuOpen ? 'show' : ''}`}>
+            <h4><Link to='/' className='Link' onClick={() => setMenuOpen(false)}>Home</Link></h4>
+            <h4><Link to='/about' className='Link' onClick={() => setMenuOpen(false)}>About Us</Link></h4>
+            <h4 className='Link'>Team</h4>
+            <h4><Link to='/services' className='Link' onClick={() => setMenuOpen(false)}>Services</Link></h4>
+            <h4><Link to='/CITR' className='Link' onClick={() => setMenuOpen(false)}>CITR</Link></h4>
+            <h4><Link to='/contact' className='Link' onClick={() => setMenuOpen(false)}>Contact</Link></h4>
+          </div>
+
+          {/* Desktop Menu */}
+          <div className='options'>
+            <h4><Link to='/' className='Link'>Home</Link></h4>
+            <h4><Link to='/about' className='Link'>About Us</Link></h4>
+            <h4>Team</h4>
+            <div className='service'>
+              <h4><Link to='/services' className='Link'>Services</Link></h4>
+              <Dropdown menuData={menuData} />
+            </div>
+            <h4><Link to='/CITR' className='Link'>CITR</Link></h4>
+            <h4><Link to='/contact' className='Link'>Contact</Link></h4>
+          </div>
+        </nav>
+      </header>
+
+      <main className='h-content'>
+        <section className='h-img-container'>
+          <ImageSlider/>
+        </section>
+
+        <section className='we_are'>
+          <div className='img2'>
+            <img src={IMG2} alt='Who We Are' className='img2' />
+          </div>
+          <div className='img2_matter'>
+            <div className='text-container'>
+              <div className='text-back'>Who We Are</div>
+              <div className='text-front'>Who We Are</div>
+            </div>
+            <h2>Your Trusted Partner for Growth</h2>
+            <p>
+              <b>VIT HUB</b> is your trusted partner, delivering innovative, affordable solutions in creative design, marketing, data analytics, and project development. 
+              We specialize in helping small and medium businesses overcome challenges and achieve measurable growth with strategies tailored to their unique needs.
+            </p>
+            <p>
+              Our expert team connects you with your audience, optimizes processes, and strengthens your business with precision and creativity. More than a service provider, we’re your trusted partner in transforming vision into success.
+            </p>
+            <button className='button'><Link to='/about' className='Link1'>About us</Link></button>
+          </div>
+        </section>
+
+        <section className='services'>
+          <div className='s-title'>
+            <div className='s-text-container'>
+              <div className='s-text-back'>Services</div>
+              <div className='s-text-front'>Our Services</div>
+            </div>
+          </div>
+          <div className='h-box'>
+            {[ 
+              {logo: Logo1, title: "Graphic Design", desc: "We create stunning visuals that captivate and engage your audience, enhancing your brand identity."},
+              {logo: Logo2, title: "Web & App Development", desc: "We create stunning visuals that captivate and engage your audience, enhancing your brand identity."},
+              {logo: Logo3, title: "Marketing Services", desc: "We create stunning visuals that captivate and engage your audience, enhancing your brand identity."},
+              {logo: Logo4, title: "Data Analytics", desc: "We create stunning visuals that captivate and engage your audience, enhancing your brand identity."}
+            ].map(({logo, title, desc}, i) => (
+              <div className='h-box-1' key={i}>
+                <img src={logo} alt={title} className='logo-1' />
+                <h3>{title}</h3>
+                <p>{desc}</p>
+                <button className='button'><Link to='/services' className='Link1'>Read More</Link></button>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <footer className='footer'>
+          <div className='footer-up'>
+              <div className='contact'>
+              <div className='c_title'>
+                  <h1>Contact</h1>
+              </div>
+              <div>
+                  <h4><BsFillChatTextFill /><a href='mailto:vitdhub@gmail.com' style={{textDecoration:"none",color:"white"}}> vitdhub@gmail.com</a></h4>
+                  <h4><BsFillPinMapFill /> Vijayawada, AndhraPradesh, 521137</h4>
+              </div>
+              </div>
+
+              <div className='news_letter'>
+              <div className='c_title'>
+                  <h1>News Letter</h1>
+              </div>
+              <p>Subscribe to our newsletter for the latest updates and offers.</p>
+              <textarea placeholder='Subscribe to our channel' className='input' />
+              </div>
+
+              <div className='Pages'>
+              <div className='c_title'>
+                  <h1>Pages</h1>
+              </div>
+              <div className='pages'>
+                  <div><Link to='/' className='Link1'>Home</Link></div>
+                  <div><Link to='/about' className='Link1'>About</Link></div>
+                  <div><Link to='/about' className='Link1'>Team</Link></div>
+                  <div><Link to='/services' className='Link1'>Services</Link></div>
+                  <div><Link to='/CITR' className='Link1'>CITR</Link></div>
+                  <div><Link to='/contact' className='Link1'>Contact</Link></div>
+              </div>
+              </div>
+          </div>
+
+          <div className='footer-down'>
+              <img src={Logo} alt='logo' className='logo1' />
+              <div className='icons'>
+              <a href='https://wa.me/message/OVK73JH6FGKZC1' target='_blank' rel="noopener noreferrer"><BsWhatsapp className='icon' /></a>
+              <a href='https://www.facebook.com/share/1C5RWvNczt/' target='_blank' rel="noopener noreferrer"><BsFacebook className='icon' /></a>
+              <a href='https://x.com/VITHUB_PVT_LTD?t=2AOtDnRqkNy5NcwNk6G-kg&s=08' target='_blank' rel="noopener noreferrer"><BsTwitterX className='icon' /></a>
+              <a href='https://www.linkedin.com/in/vijayawada-innovative-technology-development-hub-private-limited-89635536a' target='_blank' rel="noopener noreferrer"><BsLinkedin className='icon' /></a>
+              <a href='https://www.instagram.com/vithub_innovations?utm_source=qr&igsh=NTNza2RubnIyY2Vr' target='_blank' rel="noopener noreferrer"><BsInstagram className='icon' /></a>
+              <a href='t.me/vithubinnovations' target='_blank' rel="noopener noreferrer"><BsTelegram className='icon' /></a>
+              </div>
+          </div>
+        </footer>
+    </div>
+  );
+}
+
+export default Home;
