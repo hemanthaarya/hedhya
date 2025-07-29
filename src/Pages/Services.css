@@ -90,6 +90,7 @@
 .n-cont{
     display: flex;
     justify-content: center;
+    margin-top: 80px;
 }
 .n-container{
     display: flex;
@@ -133,6 +134,22 @@
     cursor: pointer;
     font-size: bold;
     font-weight: 600;
+}
+.bb{
+    background-color: red;
+    color: white;
+    width: 150px;
+    border-radius: 20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: bold;
+    font-weight: 600;
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media(max-width:688px){

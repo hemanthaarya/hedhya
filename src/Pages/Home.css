@@ -42,8 +42,15 @@ body,html,.main{
     font-weight: 600;
     font-size: 1.2rem;
     text-align: center;
-    padding: 10px 0;
     font-style: italic;
+}
+.header h3{
+    margin: 0;
+    color: #003366;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 0;
 }
 .navbar-1{
     display: flex;
@@ -599,7 +606,7 @@ body,html,.main{
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 626px) {
   .navbar-1 {
     flex-direction: column;
     gap: 12px;

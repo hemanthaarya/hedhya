@@ -14,7 +14,9 @@ function ServiceDetail() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const { service } = useParams();
   const decodedService = decodeURIComponent(service);
-  
+  const Subscribe = () => {
+        alert("Subscribed Successfully");
+    };
   let foundService = null;
 
   for (const menu of menuData) {
@@ -39,6 +41,10 @@ function ServiceDetail() {
           <div>
             <img src={Logo} alt='logo' className='logo' />
             <h2>For Future Innovation</h2>
+          </div>
+          <div>
+            <h3>Vijayawada Innovative Technology Development Hub Private Limited</h3>
+            <h2>CIN : U63112AP2025PTC117421</h2>
           </div>
           <div className='details'>
             <BsTelephoneFill className='phn'/>
@@ -119,7 +125,8 @@ function ServiceDetail() {
                     <h1>News Letter</h1>
                 </div>
                 <p>Subscribe to our newsletter for the latest updates and offers.</p>
-                <textarea placeholder='Subscribe to our channel' className='input' />
+                <textarea placeholder='Drop your E-mail id here' className='input' />
+                <div ><button className='bb' onClick={()=>Subscribe()}>Subscribe</button></div> 
                 </div>
 
                 <div className='Pages'>

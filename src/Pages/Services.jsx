@@ -16,15 +16,18 @@ import Img12 from '../Images/img12.jpg';
 import Img13 from '../Images/img13.jpg';
 import Img14 from '../Images/img14.jpg';
 import { useState } from 'react';
-import { FaSearchengin,FaRegHandshake,FaRegThumbsUp } from "react-icons/fa6";
-import { GiMountedKnight } from "react-icons/gi";
 import { Link } from 'react-router-dom';
+import Dropdown from './dropdown';
+import menuData from '../menuData.js';
 
 
 function Services() {
     const [menuOpen, setMenuOpen] = useState(false);
         
     const toggleMenu = () => setMenuOpen(!menuOpen);
+    const Subscribe = () => {
+        alert("Subscribed Successfully");
+    };
   return (
     <div>
         <header className='header'>
@@ -32,6 +35,10 @@ function Services() {
           <div>
             <img src={Logo} alt='logo' className='logo' />
             <h2>For Future Innovation</h2>
+          </div>
+          <div>
+            <h3>Vijayawada Innovative Technology Development Hub Private Limited</h3>
+            <h2>CIN : U63112AP2025PTC117421</h2>
           </div>
           <div className='details'>
             <BsTelephoneFill className='phn'/>
@@ -72,6 +79,7 @@ function Services() {
             <h4>Team</h4>
             <div className='service'>
               <h4><Link to='/services' className='Link'>Services</Link></h4>
+              <Dropdown menuData={menuData}/>
             </div>
             <h4><Link to='/CITR' className='Link'>CITR</Link></h4>
             <h4><Link to='/contact' className='Link'>Contact</Link></h4>
@@ -183,26 +191,6 @@ function Services() {
                     </div>
                 </div>
             </div>
-            <div className='n-cont'>
-                <div className='n-container'>
-                    <div>
-                        <FaSearchengin className='IC'/>
-                        <h3>Brand Identity</h3>
-                    </div>
-                    <div>
-                        <FaRegHandshake className='IC'/>
-                        <h3>Customer Engagement</h3>
-                    </div>
-                    <div>
-                        <FaRegThumbsUp className='IC'/>
-                        <h3>Professional Appeal</h3>
-                    </div>
-                    <div style={{border:'none'}}>
-                        <GiMountedKnight className='IC'/>
-                        <h3>Competitive Edge</h3>
-                    </div>
-                </div>
-            </div>
             <div className='s-quote'>
                 <h1>"Let’s innovate, empower, and succeed—together."</h1>
                 <button><Link to='/contact' className='Link1'>Let's Connect</Link></button>
@@ -225,7 +213,8 @@ function Services() {
                     <h1>News Letter</h1>
                 </div>
                 <p>Subscribe to our newsletter for the latest updates and offers.</p>
-                <textarea placeholder='Subscribe to our channel' className='input' />
+                <textarea placeholder='Drop your E-mail id here' className='input' />
+                <div ><button className='bb' onClick={()=>Subscribe()}>Subscribe</button></div> 
                 </div>
 
                 <div className='Pages'>
@@ -251,7 +240,7 @@ function Services() {
                 <a href='https://x.com/VITHUB_PVT_LTD?t=2AOtDnRqkNy5NcwNk6G-kg&s=08' target='_blank' rel="noopener noreferrer"><BsTwitterX className='icon' /></a>
                 <a href='https://www.linkedin.com/in/vijayawada-innovative-technology-development-hub-private-limited-89635536a' target='_blank' rel="noopener noreferrer"><BsLinkedin className='icon' /></a>
                 <a href='https://www.instagram.com/vithub_innovations?utm_source=qr&igsh=NTNza2RubnIyY2Vr' target='_blank' rel="noopener noreferrer"><BsInstagram className='icon' /></a>
-                <a href='t.me/vithubinnovations' target='_blank' rel="noopener noreferrer"><BsTelegram className='icon' /></a>
+                <a href='https://t.me/vithubinnovations' target='_blank' rel="noopener noreferrer"><BsTelegram className='icon' /></a>
                 </div>
             </div>
         </footer>

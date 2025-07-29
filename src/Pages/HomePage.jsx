@@ -11,11 +11,16 @@ import Logo3 from '../Images/s-box3.jpg';
 import Logo4 from '../Images/s-box4.jpg';
 import { Link } from 'react-router-dom';
 import menuData from '../menuData.js';
+import { FaSearchengin,FaRegHandshake,FaRegThumbsUp } from "react-icons/fa6";
+import { GiMountedKnight } from "react-icons/gi";
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
+  const Subscribe = () => {
+        alert("Subscribed Successfully");
+    };
 
   return (
     <div className='main'>
@@ -24,6 +29,10 @@ function Home() {
           <div>
             <img src={Logo} alt='logo' className='logo' />
             <h2>For Future Innovation</h2>
+          </div>
+          <div>
+            <h3>Vijayawada Innovative Technology Development Hub Private Limited</h3>
+            <h2>CIN : U63112AP2025PTC117421</h2>
           </div>
           <div className='details'>
             <BsTelephoneFill className='phn'/>
@@ -107,10 +116,10 @@ function Home() {
           </div>
           <div className='h-box'>
             {[ 
-              {logo: Logo1, title: "Graphic Design", desc: "We create stunning visuals that captivate and engage your audience, enhancing your brand identity."},
-              {logo: Logo2, title: "Web & App Development", desc: "We create stunning visuals that captivate and engage your audience, enhancing your brand identity."},
-              {logo: Logo3, title: "Marketing Services", desc: "We create stunning visuals that captivate and engage your audience, enhancing your brand identity."},
-              {logo: Logo4, title: "Data Analytics", desc: "We create stunning visuals that captivate and engage your audience, enhancing your brand identity."}
+              {logo: Logo1, title: "Graphic Design", desc: "We bring your ideas to life with creative, high-quality designs that reflect your brand’s personality. From logos to promotional materials, we craft visuals that make a lasting impression and drive engagement."},
+              {logo: Logo2, title: "Web & App Development", desc: "We build fast, responsive, and scalable web and mobile applications tailored to your business needs. From concept to deployment, our solutions deliver seamless user experiences and drive real results."},
+              {logo: Logo3, title: "Digital Marketing", desc: "We boost your online presence with targeted digital strategies — from SEO and social media to content marketing and ads.Our goal: attract, engage, and convert your ideal audience."},
+              {logo: Logo4, title: "Data Analytics", desc: "We turn raw data into actionable insights that drive smarter decisions. From dashboards to predictive models, our analytics solutions help you uncover trends, optimize performance, and fuel business growth."}
             ].map(({logo, title, desc}, i) => (
               <div className='h-box-1' key={i}>
                 <img src={logo} alt={title} className='logo-1' />
@@ -121,6 +130,26 @@ function Home() {
             ))}
           </div>
         </section>
+        <div className='n-cont'>
+          <div className='n-container'>
+              <div>
+                  <FaSearchengin className='IC'/>
+                  <h3>Brand Identity</h3>
+              </div>
+              <div>
+                  <FaRegHandshake className='IC'/>
+                  <h3>Customer Engagement</h3>
+              </div>
+              <div>
+                  <FaRegThumbsUp className='IC'/>
+                  <h3>Professional Appeal</h3>
+              </div>
+              <div style={{border:'none'}}>
+                  <GiMountedKnight className='IC'/>
+                  <h3>Competitive Edge</h3>
+              </div>
+          </div>
+      </div>
       </main>
 
       <footer className='footer'>
@@ -136,12 +165,13 @@ function Home() {
               </div>
 
               <div className='news_letter'>
-              <div className='c_title'>
-                  <h1>News Letter</h1>
-              </div>
-              <p>Subscribe to our newsletter for the latest updates and offers.</p>
-              <textarea placeholder='Subscribe to our channel' className='input' />
-              </div>
+                    <div className='c_title'>
+                        <h1>News Letter</h1>
+                    </div>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <textarea placeholder='Drop your E-mail id here' className='input' />
+                    <div ><button className='bb' onClick={()=>Subscribe()}>Subscribe</button></div> 
+                </div>
 
               <div className='Pages'>
               <div className='c_title'>

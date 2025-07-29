@@ -14,6 +14,9 @@ import './Education.css';
 function CITR(){
     const [menuOpen, setMenuOpen] = useState(false);
     const { title } = useParams();
+    const Subscribe = () => {
+        alert("Subscribed Successfully");
+    };
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -30,11 +33,15 @@ function CITR(){
                         <img src={Logo} alt='logo' className='logo' />
                         <h2>For Future Innovation</h2>
                     </div>
+                    <div>
+                        <h3>Vijayawada Innovative Technology Development Hub Private Limited</h3>
+                        <h2>CIN : U63112AP2025PTC117421</h2>
+                    </div>
                     <div className='details'>
                         <BsTelephoneFill className='phn'/>
                         <h3>+91 8886667850</h3>
                         <button className='button'>
-                            <Link to='/contact' className='Link1'>Get a Quote</Link>
+                        <Link to='/contact' className='Link1'>Get a Quote</Link>
                         </button>
                     </div>
                 </div>
@@ -100,7 +107,8 @@ function CITR(){
                         <h1>News Letter</h1>
                     </div>
                     <p>Subscribe to our newsletter for the latest updates and offers.</p>
-                    <textarea placeholder='Subscribe to our channel' className='input' />
+                    <textarea placeholder='Drop your E-mail id here' className='input' />
+                    <div ><button className='bb' onClick={()=>Subscribe()}>Subscribe</button></div> 
                     </div>
 
                     <div className='Pages'>
@@ -143,11 +151,15 @@ function CITR(){
                         <img src={Logo} alt='logo' className='logo' />
                         <h2>For Future Innovation</h2>
                     </div>
+                    <div>
+                        <h3>Vijayawada Innovative Technology Development Hub Private Limited</h3>
+                        <h2>CIN : U63112AP2025PTC117421</h2>
+                    </div>
                     <div className='details'>
                         <BsTelephoneFill className='phn'/>
                         <h3>+91 8886667850</h3>
                         <button className='button'>
-                            <Link to='/contact' className='Link1'>Get a Quote</Link>
+                        <Link to='/contact' className='Link1'>Get a Quote</Link>
                         </button>
                     </div>
                 </div>
@@ -245,7 +257,8 @@ function CITR(){
                         <h1>News Letter</h1>
                     </div>
                     <p>Subscribe to our newsletter for the latest updates and offers.</p>
-                    <textarea placeholder='Subscribe to our channel' className='input' />
+                    <textarea placeholder='Drop your E-mail id here' className='input' />
+                    <div ><button className='bb' onClick={()=>Subscribe()}>Subscribe</button></div> 
                     </div>
 
                     <div className='Pages'>

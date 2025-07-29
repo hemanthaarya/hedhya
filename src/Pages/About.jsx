@@ -20,22 +20,29 @@ function About() {
     const [menuOpen, setMenuOpen] = useState(false);
     
     const toggleMenu = () => setMenuOpen(!menuOpen);
+    const Subscribe = () => {
+        alert("Subscribed Successfully");
+    };
   return (
     <div className="about">
         <header className='header'>
             <div className='navbar-1'>
-                <div>
-                    <img src={Logo} alt='logo' className='logo' />
-                    <h2>For Future Innovation</h2>
-                </div>
-                <div className='details'>
-                    <BsTelephoneFill className='phn'/>
-                    <h3>+91 8886667850</h3>
-                    <button className='button'>
-                    <Link to='/contact' className='Link1'>Get a Quote</Link>
-                    </button>
-                </div>
-            </div>
+          <div>
+            <img src={Logo} alt='logo' className='logo' />
+            <h2>For Future Innovation</h2>
+          </div>
+          <div>
+            <h3>Vijayawada Innovative Technology Development Hub Private Limited</h3>
+            <h2>CIN : U63112AP2025PTC117421</h2>
+          </div>
+          <div className='details'>
+            <BsTelephoneFill className='phn'/>
+            <h3>+91 8886667850</h3>
+            <button className='button'>
+              <Link to='/contact' className='Link1'>Get a Quote</Link>
+            </button>
+          </div>
+        </div>
 
             <nav className='navbar-2'>
             {/* Hamburger Icon visible on mobile only */}
@@ -137,32 +144,32 @@ function About() {
                     <div>
                         <TiGroup className='logo1'/>
                         <h2>Integrity</h2>
-                        <p>We work with honesty and transparency to earn your trust.</p>
+                        <p>Integrity is at the core of everything we do — we believe in doing the right thing, always.</p>
                     </div>
                     <div>
                         <ImPointRight className='logo1'/>
                         <h2>Quality</h2>
-                        <p>We work with honesty and transparency to earn your trust.</p>
+                        <p>We don’t cut corners — we craft every solution with precision, care, and excellence.</p>
                     </div>
                     <div>
                         <MdOutlineWbIncandescent className='logo1'/>
                         <h2>Innovation</h2>
-                        <p>We work with honesty and transparency to earn your trust.</p>
+                        <p>Innovation isn’t just a buzzword for us — it’s how we solve problems, create value, and stay ahead..</p>
                     </div>
                     <div>
                         <PiHandshakeFill className='logo1'/>
                         <h2>Commitment</h2>
-                        <p>We work with honesty and transparency to earn your trust.</p>
+                        <p>We’re not just committed to completing the work — we’re committed to your success.</p>
                     </div>
                     <div>
                         <TbReceiptRupee className='logo1'/>
                         <h2>Cost</h2>
-                        <p>We work with honesty and transparency to earn your trust.</p>
+                        <p>We offer high-quality solutions at prices that make sense — because great work shouldn’t break the bank.</p>
                     </div>
                     <div>
                         <FaPeoplePulling className='logo1'/>
                         <h2>Support</h2>
-                        <p>We work with honesty and transparency to earn your trust.</p>
+                        <p>We don’t just deliver projects — we stand by you with dedicated support at every step.</p>
                     </div>
                 </div>
             </div>
@@ -180,13 +187,14 @@ function About() {
                 </div>
                 </div>
 
-                <div className='news_letter'>
-                <div className='c_title'>
-                    <h1>News Letter</h1>
-                </div>
-                <p>Subscribe to our newsletter for the latest updates and offers.</p>
-                <textarea placeholder='Subscribe to our channel' className='input' />
-                </div>
+                    <div className='news_letter'>
+                    <div className='c_title'>
+                        <h1>News Letter</h1>
+                    </div>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <textarea placeholder='Drop your E-mail id here' className='input' />
+                    <div ><button className='bb' onClick={()=>Subscribe()}>Subscribe</button></div> 
+                    </div>
 
                 <div className='Pages'>
                 <div className='c_title'>

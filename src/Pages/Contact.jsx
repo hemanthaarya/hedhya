@@ -16,6 +16,9 @@ import emailjs from 'emailjs-com';
 
 function Contact() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const Subscribe = () => {
+        alert("Subscribed Successfully");
+    };
   const form = useRef();
   const SERVICE_ID = 'service_fci52ya';
   const TEMPLATE_ID = 'template_lwfnnme';
@@ -44,6 +47,10 @@ function Contact() {
           <div>
             <img src={Logo} alt='logo' className='logo' />
             <h2>For Future Innovation</h2>
+          </div>
+          <div>
+            <h3>Vijayawada Innovative Technology Development Hub Private Limited</h3>
+            <h2>CIN : U63112AP2025PTC117421</h2>
           </div>
           <div className='details'>
             <BsTelephoneFill className='phn'/>
@@ -118,8 +125,14 @@ function Contact() {
                 <select name='service' className='input' required>
                   <option value='Graphic Designing'>Graphic Designing</option>
                   <option value='Web & App Development'>Web & App Development</option>
-                  <option value='Market Analysis'>Market Analysis</option>
+                  <option value='Digital Marketing'>Market Analysis</option>
                   <option value='Data Analytics'>Data Analytics</option>
+                  <option value='Education & Training'>Education & Training</option>
+                  <option value='Internships'>Internships</option>
+                  <option value='Seminars/Workshops'>Seminars/Workshops</option>
+                  <option value='Research & Development Cell'>Research & Development Cell</option>
+                  <option value='Career Assistance Cell'>Career Assistance Cell</option>
+                  <option value='Career Opportunities Cell'>Career Opportunities Cell</option>
                 </select>
 
                 <textarea name='message' placeholder='Message' className='input' required></textarea>
@@ -144,10 +157,11 @@ function Contact() {
 
           <div className='news_letter'>
             <div className='c_title'>
-              <h1>News Letter</h1>
+                <h1>News Letter</h1>
             </div>
             <p>Subscribe to our newsletter for the latest updates and offers.</p>
-            <textarea placeholder='Subscribe to our channel' className='input' />
+            <textarea placeholder='Drop your E-mail id here' className='input' />
+            <div ><button className='bb' onClick={()=>Subscribe()}>Subscribe</button></div> 
           </div>
 
           <div className='Pages'>
