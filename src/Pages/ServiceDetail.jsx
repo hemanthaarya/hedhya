@@ -3,6 +3,7 @@ import menuData from '../menuData';
 import Logo from '../Images/logo.jpg';
 import './Services.css';
 import { useState } from 'react';
+import { MdOutlineArrowDropDown } from "react-icons/md";
 import './Home.css'
 import { BsTelephoneFill,BsFillChatTextFill,BsFillPinMapFill,BsWhatsapp,BsFacebook,BsTwitterX,BsLinkedin,BsInstagram,BsTelegram } from "react-icons/bs";
 import { Link } from 'react-router-dom';
@@ -10,6 +11,7 @@ import Dropdown from './dropdown.jsx';
 
 function ServiceDetail() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showSubServices, setShowSubServices] = useState(false);
           
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const { service } = useParams();
@@ -43,7 +45,7 @@ function ServiceDetail() {
             <h2>For Future Innovation</h2>
           </div>
           <div>
-            <h3>Vijayawada Innovative Technology Development Hub Private Limited</h3>
+            <h3>VIJAYAWADA INNOVATIVE TECHNOLOGY DEVELOPMENT HUB PRIVATE LIMITED</h3>
             <h2>CIN : U63112AP2025PTC117421</h2>
           </div>
           <div className='details'>
@@ -73,8 +75,7 @@ function ServiceDetail() {
             <h4><Link to='/' className='Link' onClick={() => setMenuOpen(false)}>Home</Link></h4>
             <h4><Link to='/about' className='Link' onClick={() => setMenuOpen(false)}>About Us</Link></h4>
             <h4 className='Link'>Team</h4>
-            <h4><Link to='/about' className='Link' onClick={() => setMenuOpen(false)}>Team</Link></h4>
-            <h4><Link to='/services' className='Link' onClick={() => setMenuOpen(false)}>Services</Link></h4>
+            <h4 className='Link' onClick={() => setShowSubServices(true)}>Services <MdOutlineArrowDropDown/></h4>
             <h4><Link to='/CITR' className='Link' onClick={() => setMenuOpen(false)}>CITR</Link></h4>
             <h4><Link to='/contact' className='Link' onClick={() => setMenuOpen(false)}>Contact</Link></h4>
           </div>
@@ -93,6 +94,32 @@ function ServiceDetail() {
           </div>
         </nav>
       </header>
+      {showSubServices && (
+        <div className="popup-overlay">
+          <div className="popup-box">
+            <div className="popup-header">
+                <h3>Our Services</h3>
+                <button className="close-btn" onClick={() => setShowSubServices(false)}>❌</button>
+            </div>
+            <div className='popup-content'>
+                {Object.keys(menuData[0].items).map((category, index) => (
+                <div key={index} className='popup-category'>
+                    <h5>{category}</h5>
+                    <ul>
+                    {menuData[0].items[category].map((service, i) => (
+                        <li key={i}>
+                        <Link to={`/services/${encodeURIComponent(service.name)}`}>
+                            {service.name}
+                        </Link>
+                        </li>
+                    ))}
+                    </ul>
+                </div>
+                ))}
+            </div>
+          </div>
+        </div>
+      )}
       <div style={{ padding: '2rem', margin: 'auto' }}>
         <h1 style={{color:"#034268"}}>{foundService.name}</h1>
         {foundService.image && (
@@ -116,7 +143,9 @@ function ServiceDetail() {
                 </div>
                 <div>
                     <h4><BsFillChatTextFill /><a href='mailto:vitdhub@gmail.com' style={{textDecoration:"none",color:"white"}}> vitdhub@gmail.com</a></h4>
-                    <h4><BsFillPinMapFill /> Vijayawada, AndhraPradesh, 521137</h4>
+                    <h4><BsTelephoneFill/>+91 8886667850</h4>
+                    <h4><BsTelephoneFill/>+91 9100556667</h4>
+                    <h4><BsFillPinMapFill /> 5-9-469, Ramanagar katta YSR, Tadigadapa, Poranki, Vijayawada, Andhra Pradesh 521137</h4>
                 </div>
                 </div>
 

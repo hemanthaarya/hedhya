@@ -3,6 +3,7 @@ import './About.css';
 import  { useState } from 'react';
 import { BsTelephoneFill,BsFillChatTextFill,BsFillPinMapFill,BsWhatsapp,BsFacebook,BsTwitterX,BsLinkedin,BsInstagram,BsTelegram } from "react-icons/bs";
 import { GiStairsGoal,GiMountainClimbing } from "react-icons/gi";
+import { MdOutlineArrowDropDown } from "react-icons/md"; 
 import { TiGroup } from "react-icons/ti";
 import { ImPointRight } from "react-icons/im";
 import { MdOutlineWbIncandescent } from "react-icons/md";
@@ -14,10 +15,12 @@ import Dropdown from './dropdown.jsx';
 import IMG3 from '../Images/img3.jpg';
 import IMG4 from '../Images/img4.jpg';
 import { Link } from 'react-router-dom';
+import './Home.css';
 
 
 function About() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [showSubServices, setShowSubServices] = useState(false);
     
     const toggleMenu = () => setMenuOpen(!menuOpen);
     const Subscribe = () => {
@@ -32,7 +35,7 @@ function About() {
             <h2>For Future Innovation</h2>
           </div>
           <div>
-            <h3>Vijayawada Innovative Technology Development Hub Private Limited</h3>
+            <h3>VIJAYAWADA INNOVATIVE TECHNOLOGY DEVELOPMENT HUB PRIVATE LIMITED</h3>
             <h2>CIN : U63112AP2025PTC117421</h2>
           </div>
           <div className='details'>
@@ -62,7 +65,7 @@ function About() {
                 <h4><Link to='/' className='Link' onClick={() => setMenuOpen(false)}>Home</Link></h4>
                 <h4><Link to='/about' className='Link' onClick={() => setMenuOpen(false)}>About Us</Link></h4>
                 <h4 className='Link'>Team</h4>
-                <h4><Link to='/services' className='Link' onClick={() => setMenuOpen(false)}>Services</Link></h4>
+                <h4 className='Link' onClick={() => setShowSubServices(true)}>Services <MdOutlineArrowDropDown/></h4>
                 <h4><Link to='/CITR' className='Link' onClick={() => setMenuOpen(false)}>CITR</Link></h4>
                 <h4><Link to='/contact' className='Link' onClick={() => setMenuOpen(false)}>Contact</Link></h4>
             </div>
@@ -81,6 +84,32 @@ function About() {
             </div>
             </nav>
         </header>
+        {showSubServices && (
+            <div className="popup-overlay">
+            <div className="popup-box">
+                <div className="popup-header">
+                    <h3>Our Services</h3>
+                    <button className="close-btn" onClick={() => setShowSubServices(false)}>❌</button>
+                </div>
+                <div className='popup-content'>
+                    {Object.keys(menuData[0].items).map((category, index) => (
+                    <div key={index} className='popup-category'>
+                        <h5>{category}</h5>
+                        <ul>
+                        {menuData[0].items[category].map((service, i) => (
+                            <li key={i}>
+                            <Link to={`/services/${encodeURIComponent(service.name)}`}>
+                                {service.name}
+                            </Link>
+                            </li>
+                        ))}
+                        </ul>
+                    </div>
+                    ))}
+                </div>
+            </div>
+            </div>
+        )}
         <div className='A-content'>
             <div className='img-container'>
                 <img src={IMG3} alt='img' className='img3'/>
@@ -183,7 +212,9 @@ function About() {
                 </div>
                 <div>
                     <h4><BsFillChatTextFill /><a href='mailto:vitdhub@gmail.com' style={{textDecoration:"none",color:"white"}}> vitdhub@gmail.com</a></h4>
-                    <h4><BsFillPinMapFill /> Vijayawada, AndhraPradesh, 521137</h4>
+                    <h4><BsTelephoneFill/>+91 8886667850</h4>
+                    <h4><BsTelephoneFill/>+91 9100556667</h4>
+                    <h4><BsFillPinMapFill /> 5-9-469, Ramanagar katta YSR, Tadigadapa, Poranki, Vijayawada, Andhra Pradesh 521137</h4>
                 </div>
                 </div>
 

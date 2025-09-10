@@ -4,6 +4,7 @@ import {
   BsTelephoneFill, BsFillChatTextFill, BsFillPinMapFill,
   BsWhatsapp, BsFacebook, BsTwitterX, BsLinkedin, BsInstagram, BsTelegram
 } from "react-icons/bs";
+import { MdOutlineArrowDropDown } from "react-icons/md"; 
 import menuData from '../menuData';
 import Dropdown from './dropdown.jsx';
 import { useState, useRef } from 'react';
@@ -16,13 +17,14 @@ import emailjs from 'emailjs-com';
 
 function Contact() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showSubServices, setShowSubServices] = useState(false);
   const Subscribe = () => {
         alert("Subscribed Successfully");
     };
   const form = useRef();
-  const SERVICE_ID = 'service_fci52ya';
-  const TEMPLATE_ID = 'template_lwfnnme';
-  const PUBLIC_KEY = 'Kb-L42B638FJ2WiLl';
+  const SERVICE_ID = 'service_k7a8lor';
+  const TEMPLATE_ID = 'template_z7yryqn';
+  const PUBLIC_KEY = 'ID6zzCv7FTejHuB6m';
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -49,7 +51,7 @@ function Contact() {
             <h2>For Future Innovation</h2>
           </div>
           <div>
-            <h3>Vijayawada Innovative Technology Development Hub Private Limited</h3>
+            <h3>VIJAYAWADA INNOVATIVE TECHNOLOGY DEVELOPMENT HUB PRIVATE LIMITED</h3>
             <h2>CIN : U63112AP2025PTC117421</h2>
           </div>
           <div className='details'>
@@ -77,10 +79,10 @@ function Contact() {
             <h4><Link to='/' className='Link' onClick={() => setMenuOpen(false)}>Home</Link></h4>
             <h4><Link to='/about' className='Link' onClick={() => setMenuOpen(false)}>About Us</Link></h4>
             <h4 className='Link'>Team</h4>
-            <h4><Link to='/services' className='Link' onClick={() => setMenuOpen(false)}>Services</Link></h4>
+            <h4 className='Link' onClick={() => setShowSubServices(true)}>Services <MdOutlineArrowDropDown/></h4>
             <h4><Link to='/CITR' className='Link' onClick={() => setMenuOpen(false)}>CITR</Link></h4>
             <h4><Link to='/contact' className='Link' onClick={() => setMenuOpen(false)}>Contact</Link></h4>
-          </div>
+        </div>
 
           <div className='options'>
             <h4><Link to='/' className='Link'>Home</Link></h4>
@@ -95,6 +97,32 @@ function Contact() {
           </div>
         </nav>
       </header>
+      {showSubServices && (
+        <div className="popup-overlay">
+        <div className="popup-box">
+            <div className="popup-header">
+                <h3>Our Services</h3>
+                <button className="close-btn" onClick={() => setShowSubServices(false)}>❌</button>
+            </div>
+            <div className='popup-content'>
+                {Object.keys(menuData[0].items).map((category, index) => (
+                <div key={index} className='popup-category'>
+                    <h5>{category}</h5>
+                    <ul>
+                    {menuData[0].items[category].map((service, i) => (
+                        <li key={i}>
+                        <Link to={`/services/${encodeURIComponent(service.name)}`}>
+                            {service.name}
+                        </Link>
+                        </li>
+                    ))}
+                    </ul>
+                </div>
+                ))}
+            </div>
+        </div>
+        </div>
+      )}
 
       <div className='C-content'>
         <div className='img-container'>
@@ -150,8 +178,10 @@ function Contact() {
               <h1>Contact</h1>
             </div>
             <div>
-              <h4><BsFillChatTextFill /><a href='mailto:vitdhub@gmail.com' style={{textDecoration:"none",color:"white"}}> vitdhub@gmail.com</a></h4>
-              <h4><BsFillPinMapFill /> Vijayawada, AndhraPradesh, 521137</h4>
+                <h4><BsFillChatTextFill /><a href='mailto:vitdhub@gmail.com' style={{textDecoration:"none",color:"white"}}> vitdhub@gmail.com</a></h4>
+                <h4><BsTelephoneFill/>+91 8886667850</h4>
+                <h4><BsTelephoneFill/>+91 9100556667</h4>
+                <h4><BsFillPinMapFill /> 5-9-469, Ramanagar katta YSR, Tadigadapa, Poranki, Vijayawada, Andhra Pradesh 521137</h4>
             </div>
           </div>
 
