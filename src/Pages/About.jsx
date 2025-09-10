@@ -113,11 +113,6 @@ function About() {
         <div className='A-content'>
             <div className='img-container'>
                 <img src={IMG3} alt='img' className='img3'/>
-                <div>
-                    <h1>ABOUT US</h1>
-                    <p>_________________________</p>
-                    <p><b>VIT HUB</b> is your trusted partner, delivering innovative, affordable solutions in creative design, marketing, data analytics, and project development. </p>
-                </div>
             </div>
             <div className='story'>
                 <div className='we'>

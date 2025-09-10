@@ -10,7 +10,6 @@ import IMG15 from '../Images/img15.jpg';
 import IMG16 from '../Images/img16.jpg';
 import Educatio_desc from '../Education_desc.js';
 import './Home.css';
-
 import './Education.css';
 
 function CITR(){
@@ -211,8 +210,8 @@ function CITR(){
                         <h4><Link to='/' className='Link' onClick={() => setMenuOpen(false)}>Home</Link></h4>
                         <h4><Link to='/about' className='Link' onClick={() => setMenuOpen(false)}>About Us</Link></h4>
                         <h4 className='Link'>Team</h4>
-                        <h4><Link to='/services' className='Link' onClick={() => setMenuOpen(false)}>Services</Link></h4>
-                        <h4><Link to='/Education' className='Link' onClick={() => setMenuOpen(false)}>CITR</Link></h4>
+                        <h4 className='Link' onClick={() => setShowSubServices(true)}>Services <MdOutlineArrowDropDown/></h4>
+                        <h4><Link to='/CITR' className='Link' onClick={() => setMenuOpen(false)}>CITR</Link></h4>
                         <h4><Link to='/contact' className='Link' onClick={() => setMenuOpen(false)}>Contact</Link></h4>
                     </div>
 
@@ -229,6 +228,32 @@ function CITR(){
                     </div>
                 </nav>
             </header>
+            {showSubServices && (
+                <div className="popup-overlay">
+                <div className="popup-box">
+                    <div className="popup-header">
+                        <h3>Our Services</h3>
+                        <button className="close-btn" onClick={() => setShowSubServices(false)}>❌</button>
+                    </div>
+                    <div className='popup-content'>
+                        {Object.keys(menuData[0].items).map((category, index) => (
+                        <div key={index} className='popup-category'>
+                            <h5>{category}</h5>
+                            <ul>
+                            {menuData[0].items[category].map((service, i) => (
+                                <li key={i}>
+                                <Link to={`/services/${encodeURIComponent(service.name)}`}>
+                                    {service.name}
+                                </Link>
+                                </li>
+                            ))}
+                            </ul>
+                        </div>
+                        ))}
+                    </div>
+                </div>
+                </div>
+            )}
 
             <div className="e-content">
                 <div className='img-container'>

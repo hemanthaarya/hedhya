@@ -223,11 +223,11 @@ body,html,.main{
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     padding: 15px;
-    z-index: 1000;
+    z-index: 3000;
 }
 
 .mobile-menu.show {
-    display: flex;
+    display: block;
 }
 
 .mobile-menu h4 {
