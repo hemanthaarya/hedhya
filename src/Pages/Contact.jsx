@@ -127,7 +127,7 @@ function Contact() {
       <div className='C-content'>
         <div className='img-container'>
           <img src={IMG5} alt='img' className='img3'/>
-          <div>
+          <div style={{zIndex:"0"}}>
             <h1>CONTACT US</h1>
             <p>_____________________________________</p>
           </div>
