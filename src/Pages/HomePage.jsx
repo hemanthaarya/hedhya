@@ -173,7 +173,7 @@ function Home() {
               {Portfolio_Data.map(({id,company_name,company_logo})=>(
                 <tr key={id}>
                   <td>{company_name}</td>
-                  <td><img src={company_logo}/></td>
+                  <td><img src={company_logo} alt='company_logo'/></td>
                 </tr>
               ))}
             </table>

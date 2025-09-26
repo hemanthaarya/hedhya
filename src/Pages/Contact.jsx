@@ -79,7 +79,7 @@ function Contact() {
             <h4><Link to='/' className='Link' onClick={() => setMenuOpen(false)}>Home</Link></h4>
             <h4><Link to='/about' className='Link' onClick={() => setMenuOpen(false)}>About Us</Link></h4>
             <h4 className='Link'>Team</h4>
-            <h4 className='Link' onClick={() => {setShowSubServices(true);setMenuOpen(false)}}>Services <MdOutlineArrowDropDown/></h4>
+            <h4 className='Link' onClick={() => setShowSubServices(true)}>Services <MdOutlineArrowDropDown/></h4>
             <h4><Link to='/CITR' className='Link' onClick={() => setMenuOpen(false)}>CITR</Link></h4>
             <h4><Link to='/contact' className='Link' onClick={() => setMenuOpen(false)}>Contact</Link></h4>
         </div>
@@ -111,7 +111,7 @@ function Contact() {
                     <ul>
                     {menuData[0].items[category].map((service, i) => (
                         <li key={i}>
-                        <Link to={`/services/${encodeURIComponent(service.name)}`} onClick={() => setShowSubServices(false)}>
+                        <Link to={`/services/${encodeURIComponent(service.name)}`}>
                             {service.name}
                         </Link>
                         </li>
