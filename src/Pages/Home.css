@@ -515,22 +515,13 @@ body,html,.main{
     margin-left: 20px;
 }
 .portfolio {
-  width: 100%;
+  width: 98%;
   border-collapse: collapse; /* removes double borders */
   box-shadow: 0 2px 12px rgba(3, 66, 104, 0.1);
   border-radius: 8px;
   overflow: hidden; /* keeps radius applied on table */
   margin-left: 20px;
   background-color: #fff;
-}
-
-/* Header row */
-.portfolio th {
-  background-color: #034268;
-  color: #fff;
-  padding: 12px;
-  text-align: center;
-  font-weight: 600;
 }
 
 /* Table cells */
@@ -632,6 +623,14 @@ body,html,.main{
     width: 100%;
     left: 0;
   }
+  .footer-down{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 90vw;
+    margin-left: 0;
+  }
   .pages{
     flex-direction: column;
   }
@@ -687,10 +686,8 @@ body,html,.main{
   .icons{
     gap: 5px;
   }
-  .pages{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  .Pages{
+    display: none;
   }
 }
 @media (max-width: 600px) {
@@ -707,5 +704,9 @@ body,html,.main{
   .logo1{
     width: 80px;
     margin-left: 10px;
+  }
+  .portfolio {
+    width: 100%;
+    margin-left: 5px;
   }
 }

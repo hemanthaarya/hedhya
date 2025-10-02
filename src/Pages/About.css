@@ -419,8 +419,28 @@
     text-align: center;
     color: #034268;
 }
+.img3_matter{
+    color: white;
+
+}
 
 @media (max-width: 768px) {
+    .img3,.img4{
+        width: 90%;
+        height: auto;
+    }
+    .img3_matter{
+        width: 90%;
+        height: auto;
+        position: absolute;
+        left: 8%
+    }
+    .img3_matter h1{
+        font-size: 1.2rem;
+    }
+    .img3_matter p{
+        font-size: 0.5rem;
+    }
     .we {
         flex-direction: column;
         align-items: center;

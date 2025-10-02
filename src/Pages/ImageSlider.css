@@ -45,3 +45,8 @@
 .slider-btn.next {
   right: 10px;
 }
+@media (max-width: 768px) {
+  .slider-container {
+    height: 300px;
+  }
+}

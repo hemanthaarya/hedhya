@@ -167,6 +167,10 @@ function CITR(){
                     <a href='t.me/vithubinnovations' target='_blank' rel="noopener noreferrer"><BsTelegram className='icon' /></a>
                     </div>
                 </div>
+                <div style={{textAlign:'center',padding:'10px'}}>
+                    <h4>Copyright © 2025 VIT HUB. All rights reserved.</h4>
+                    <h4>Designed & Developed by VIT HUB</h4>
+                </div>
             </footer>
         </div>
         );
@@ -344,6 +348,10 @@ function CITR(){
                     <a href='https://www.instagram.com/vithub_innovations?utm_source=qr&igsh=NTNza2RubnIyY2Vr' target='_blank' rel="noopener noreferrer"><BsInstagram className='icon' /></a>
                     <a href='t.me/vithubinnovations' target='_blank' rel="noopener noreferrer"><BsTelegram className='icon' /></a>
                     </div>
+                </div>
+                <div style={{textAlign:'center',padding:'10px'}}>
+                    <h4>Copyright © 2025 VIT HUB. All rights reserved.</h4>
+                    <h4>Designed & Developed by VIT HUB</h4>
                 </div>
             </footer>
         </div>

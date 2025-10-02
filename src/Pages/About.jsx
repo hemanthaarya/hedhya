@@ -113,7 +113,7 @@ function About() {
         <div className='A-content'>
             <div className='img-container'>
                 <img src={IMG3} alt='img' className='img3'/>
-                <div style={{zIndex:"0"}}>
+                <div style={{zIndex:"0"}} className='img3_matter'>
                     <h1>ABOUT US</h1>
                     <p>_________________________</p>
                     <p><b>VIT HUB</b> is your trusted partner, delivering innovative, affordable solutions in creative design, marketing, data analytics, and project development. </p>
@@ -253,6 +253,10 @@ function About() {
                 <a href='t.me/vithubinnovations' target='_blank' rel="noopener noreferrer"><BsTelegram className='icon' /></a>
                 </div>
             </div>
+            <div style={{textAlign:'center',padding:'10px'}}>
+              <h4>Copyright © 2025 VIT HUB. All rights reserved.</h4>
+              <h4>Designed & Developed by VIT HUB</h4>
+          </div>
         </footer>
     </div>
   );
