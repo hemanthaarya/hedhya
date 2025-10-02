@@ -1,31 +1,19 @@
 import Accounting from './Images1/accounting.jpg';
 import Android from './Images1/android.jpg';
 import Back_End from './Images1/back_end.jpg';
-import Bulk_SMS from './Images1/bulk.jpg';
 import Business_Intelligence from './Images1/busines.jpg';
-import Business_Cards from './Images1/business.jpg';
 import Company_Law from './Images1/company.jpg';
-import Content_Creation from './Images1/content.jpg';
 import Cross_Platform from './Images1/cross.jpg';
-import Custom_Illustrations from './Images1/custom.jpg';
 import Customer_Sales from './Images1/customer.jpg';
 import Dashboards from './Images1/dashboards.jpg';
 import Data_Visualization from './Images1/data_visual.jpg';
 import Data_Collection from './Images1/data.jpg';
-import Email_Marketing from './Images1/email.jpg';
-import Google from './Images1/google.jpg';
-import Graphic from './Images1/Graphic.jpg';
 import GST from './Images1/gst.jpg';
 import Income_Tax from './Images1/income.jpg';
 import Landing from './Images1/landing.jpg';
 import CSR from './Images1/CSR.jpg';
 import FCRA from './Images1/FCRA.jpg';
-import Performance_Monitoring from './Images1/performance_monitoring.jpg';
 import Performance_Optimization from './Images1/performance.jpg';
-import Posters from './Images1/posters.jpg';
-import SEO from './Images1/seo.jpg';
-import Social_Media_Templates from './Images1/social_media.jpg';
-import Social_Media_Strategy from './Images1/social.jpg';
 import Trust from './Images1/trust.jpg';
 import UI_UX from './Images1/ui_ux.jpg';
 import Web from './Images1/web.jpg';
@@ -41,39 +29,12 @@ const menuData = [
         title:'Services',
         link: '#',
         items: {
-          'Graphic Designing': [
-                    {
-                         name: 'Graphic Logo Design & Brand Guidelines',
-                         image: Graphic,
-                         description: "At our company, we offer expert <b>Graphic Logo Design</b> and comprehensive <b>Brand Guidelines</b> services that bring your brand’s identity to life. A well-crafted logo is more than just a symbol — it's the <b>visual cornerstone</b> of your brand. We help you create a strong, consistent, and memorable identity that sets you apart in a competitive market.Let us help you create a logo that communicates your story and a brand guideline that keeps it consistent everywhere."
-                    },
-                    {
-                         name: 'Social Media Templates & Creatives',
-                         image: Social_Media_Templates,
-                         description: "We design professional, high-quality posters and templates that can be used across platforms such as <b>Instagram, Facebook, LinkedIn, Twitter, WhatsApp, and YouTube.</b> Whether it's for <b>event promotions, product launches, campaigns, webinars, achievements, announcements, or festive greetings,</b> our designs ensure your message stands out."
-                    },
-                    {
-                         name: 'Posters, Flyers & Brochures',
-                         image: Posters,
-                         description: "we offer <b>customized Posters, Flyers, and Brochures design services</b> to help individuals, businesses, educational institutions, and organizations communicate their message effectively and creatively. Whether it’s for events, promotions, academic projects, branding, our design team ensures visually impactful and content-rich outputs that stand out."
-                    },
-                    {
-                         name: 'Business Cards & Corporate Stationery',
-                         image: Business_Cards,
-                         description: "we understand that first impressions matter. Our <b>Business Cards & Corporate Stationery Services</b> are designed to help your brand stand out with style, professionalism, and consistency. Whether you're a startup, SME, or established enterprise, we offer tailored design and printing solutions that reflect your brand identity with precision.Let your brand speak for itself through every piece of communication. From your business card to your office notepad — we ensure <b>brand consistency, quality, and professionalism</b> at every touchpoint"
-                    },
+          'Web & App Development': [
                     {
                          name: 'UI/UX Design for Web & App Interfaces',
                          image: UI_UX,
                          description: "we specialize in delivering intuitive and visually engaging <b>UI/UX design solutions</b> that enhance user satisfaction, drive engagement, and ensure seamless interaction across digital platforms. Our <b>UI/UX Design for Web & App Interfaces</b> service is tailored to meet the needs of modern businesses looking to create powerful, user-centered digital experiences.Our design team focuses on the perfect blend of <b>functionality, aesthetics, and usability,</b> ensuring every interface we build is not just beautiful—but also purposeful and user-friendly."
                     },
-                    {
-                         name: 'Custom Illustrations & Infographics',
-                         image: Custom_Illustrations,
-                         description: "we offer <b>Custom Illustrations & Infographics</b> as a creative service designed to <b>simplify complex ideas, enhance brand communication,</b> and engage your audience through visually compelling content. Whether you're presenting research data, educational material, marketing strategies, or technical workflows, our design team crafts tailored visuals that bring clarity, creativity, and impact to your message."
-                    }
-               ],
-          'Web & App Development': [
                     {
                          name: 'Web Design & Development',
                          image:  Web,
@@ -104,44 +65,6 @@ const menuData = [
                          name: 'Performance Optimization & Maintenance',
                          image: Performance_Optimization,
                          description: "The <b>Performance Optimization & Maintenance</b> is a core service designed to ensure that systems, infrastructure, applications, and equipment operate at their highest efficiency and reliability. Our solutions are focused on enhancing performance, reducing downtime, increasing lifespan, and lowering the total cost of ownership across technical and operational assets."
-                    }
-               ],
-          'Digital Marketing': [
-                    {
-                         name: 'Social Media Strategy & Management',
-                         image: Social_Media_Strategy,
-                         description: "In today’s digital age, <b>social media is not just a platform — it’s a powerful tool</b> to connect, engage, and grow your brand. <b>Our Social Media Strategy & Management</b> service helps businesses build a strong online presence, create meaningful engagement, and drive measurable results through effective, data-driven strategiesOur comprehensive service includes end-to-end management of your social media presence across platforms such as <b>Facebook, Instagram, LinkedIn, Twitter, YouTube, and WhatsApp Business.</b>"
-                    },
-                    {
-                         name: 'Search Engine Optimization',
-                         image: SEO,
-                         description: "In today's competitive digital landscape, simply having a website is not enough — <b>visibility matters.</b> Our company offers <b>comprehensive Search Engine Optimization (SEO) services</b> designed to enhance your online presence, attract organic traffic, and convert visitors into customers. We help businesses rank higher on search engines like Google, Bing, and Yahoo with proven SEO strategies tailored to your industry. <h3>Why SEO Matters</h3> <h3>Over 90% of online experiences begin with a search engine</h3> <h3>Over 90% of online experiences begin with a search engine</h3> <h3>Organic traffic is more trusted and cost-effective than paid ads</h3> Our SEO services ensure your business appears where your customers are looking."
-                    },
-                    {
-                         name: 'Google Ads & Paid Campaigns',
-                         image: Google,
-                         description: "In today’s competitive digital landscape, having an online presence is not enough — you need <b>targeted visibility.</b> Our <b>Google Ads & Paid Campaigns,</b> service is designed to help businesses of all sizes attract the right audience, increase leads, and maximize ROI through strategic and data-driven advertising.Our team of certified digital marketing professionals creates and manages high-performance paid campaigns across Google’s advertising network. Whether your goal is to <b>generate leads, boost sales, or increase website traffic,</b> we design campaigns that deliver measurable results."
-
-                    },
-                    {
-                         name: 'Email Marketing',
-                         image: Email_Marketing,
-                         description: "The <b>Email Marketing</b> remains one of the most powerful tools for direct customer engagement and conversion. Our company offers <b>end-to-end Email Marketing Services</b> tailored to help businesses build meaningful relationships, boost brand visibility, and drive measurable results.Our Email Marketing solutions are designed to support businesses of all sizes — from startups to enterprises — with personalized, automated, and data-driven campaigns."
-                    },
-                    {
-                         name: 'Bulk SMS Campaigns',
-                         image: Bulk_SMS,
-                         description: "Our company offers <b>Bulk SMS Campaign Services</b> that provide a powerful and cost-effective solution for businesses and organizations to instantly connect with their customers, clients, or stakeholders. Whether you're promoting a product, sending alerts, or running a marketing campaign, our bulk SMS service ensures your message is delivered quickly, securely, and directly to mobile devices."
-                    },
-                    {
-                         name: 'Content Creation & Scheduling',
-                         image: Content_Creation,
-                         description: "In the fast-paced digital world, content is not just king — it’s the <b>core of brand identity, customer engagement, and business growth.</b> Our <b>Content Creation & Scheduling services</b> are designed to help businesses build a consistent, creative, and impactful presence across all communication channels.Whether you need content for social media, blogs, websites, campaigns, or internal communication, we deliver tailored solutions that resonate with your audience and align with your brand goals."
-                    },
-                    {
-                         name: 'Performance Monitoring & Analytics',
-                         image: Performance_Monitoring,
-                         description: "Our <b>Performance Monitoring & Analytics service</b> is designed to help organizations gain real-time insights into operations, improve decision-making, and enhance overall efficiency through data-driven strategies. By combining advanced analytics with intelligent monitoring tools, we empower businesses to track, measure, and optimize their performance across systems, teams, and processes.This service involves the continuous collection, analysis, and reporting of key performance metrics to ensure alignment with organizational goals. Whether you're managing infrastructure, applications, projects, or business processes, our analytics framework delivers actionable insights for smarter control and better outcomes."
                     }
                ],
           'Business Analytics': [
