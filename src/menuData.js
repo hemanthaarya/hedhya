@@ -1,25 +1,16 @@
-import Accounting from './Images1/accounting.jpg';
 import Android from './Images1/android.jpg';
 import Back_End from './Images1/back_end.jpg';
 import Business_Intelligence from './Images1/busines.jpg';
-import Company_Law from './Images1/company.jpg';
 import Cross_Platform from './Images1/cross.jpg';
 import Customer_Sales from './Images1/customer.jpg';
 import Dashboards from './Images1/dashboards.jpg';
 import Data_Visualization from './Images1/data_visual.jpg';
 import Data_Collection from './Images1/data.jpg';
-import GST from './Images1/gst.jpg';
-import Income_Tax from './Images1/income.jpg';
 import Landing from './Images1/landing.jpg';
-import CSR from './Images1/CSR.jpg';
-import FCRA from './Images1/FCRA.jpg';
 import Performance_Optimization from './Images1/performance.jpg';
-import Trust from './Images1/trust.jpg';
 import UI_UX from './Images1/ui_ux.jpg';
 import Web from './Images1/web.jpg';
-import Loan from './Images1/Loan.jpg';
 import Trend from './Images1/Trend.jpg';
-import Company_Registration from './Images1/Companyreg.jpg';
 
 
 
