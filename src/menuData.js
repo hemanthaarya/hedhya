@@ -100,54 +100,6 @@ const menuData = [
                          image: Business_Intelligence,
                          description: "we provide <b>Business Intelligence (BI) Solutions</b> that transform raw data into actionable insights — empowering organizations to make data-driven decisions with speed, precision, and confidence. Our BI services are designed to help businesses uncover trends, monitor performance, identify opportunities, and drive strategic growth. <h2>Key Benefits</h2> <ul><li>Real-time access to business-critical insights</li><li>Improved operational efficiency and decision-making</li><li>Data-driven forecasting and strategic planning</li><li>Enhanced visibility across departments and workflows</li><li>Reduced reporting turnaround time and manual effort</li></ul>"
                     }
-               ],
-          'CA Services': [
-                    {
-                         name: 'Income Tax Services',
-                         image: Income_Tax,
-                         description: "Our company offers comprehensive <b>Income Tax Services</b> designed to meet the needs of individuals, professionals, startups, and businesses. We provide end-to-end support in planning, filing, compliance, and advisory to ensure our clients stay tax-efficient and fully compliant with the latest tax laws and regulations."
-                    },
-                    {
-                         name: 'GST Services',
-                         image: GST,
-                         description: "we offer comprehensive <b>Goods and Services Tax (GST) services</b> tailored to meet the compliance and operational needs of businesses across sectors. With a team of experienced tax professionals and financial experts, we ensure seamless and error-free GST implementation, management, and advisory support. <h2>Why Choose Us</h2> <ul><li>Experienced tax professionals and certified consultants</li><li>Transparent pricing with dedicated client support</li><li>Latest software tools for GST computation and filings</li><li>100% confidentiality and data security</li></ul>"
-                    },
-                    {
-                         name: 'Accounting & Bookkeeping',
-                         image: Accounting,
-                         description: "To simplify financial management and provide transparent, compliant, and real-time accounting solutions that support growth, planning, and operational efficiency. Our company offers reliable, accurate, and professional <b>Accounting & Bookkeeping Services</b> tailored to meet the financial management needs of businesses, startups, NGOs, educational institutions, and other organizations. With a team of experienced professionals and a commitment to precision, we help our clients maintain clean financial records, ensure compliance, and make informed business decisions."
-                    },
-                    {
-                         name: 'Company Law & ROC Services',
-                         image: Company_Law,
-                         description: "Our firm offers <b>comprehensive Company Law and ROC (Registrar of Companies) Compliance Services,</b> designed to support businesses in meeting their statutory obligations under the <b>Companies Act, 2013</b> and related regulatory frameworks. We ensure that your business remains compliant, transparent, and legally protected throughout its lifecycle — from incorporation to ongoing governance and compliance."
-                    },
-                    {
-                         name: 'Trusts, Societies & NGOs Registration',
-                         image: Trust,
-                         description: "Our company provides comprehensive support services to <b>Trusts, Societies, and Non-Governmental Organizations (NGOs)</b> to help them establish, operate, and grow in compliance with legal, financial, and strategic frameworks. Whether you're starting a charitable institution, running an educational trust, or managing a development-oriented NGO, we offer tailored solutions to ensure sustainable and impactful operations."
-                    },
-                    {
-                         name: "Company Registration",
-                         image:Company_Registration,
-                         description:"<b>Turn your business idea into a legal entity with ease.</b> We handle the entire registration process — from choosing the right structure to final approvals — ensuring a smooth, compliant start to your entrepreneurial journey. <h2>Types of Registration</h2> <ul><li>Private Limited Company</li><li>Public Limited Company</li><li>Limited Liability Partnership (LLP)</li><li>One Person Company</li></ul>"
-                    },
-                    {
-                         name: 'Project Report & Loan Documentation',
-                         image: Loan,
-                         description: 'we offer specialized <b>Project Report and Loan Documentation Services</b> to support entrepreneurs, startups, small and medium enterprises (SMEs), and business professionals in securing funding and institutional approvals. Our services are designed to meet the documentation standards of banks, financial institutions, and government loan schemes (including MSME, PMEGP, Startup India, and others).'
-                    },
-                    {
-                         name:'CSR Advisory',
-                         image: CSR,
-                         description:"Our company offers specialized <b>Corporate Social Responsibility (CSR) Advisory Services</b> to help organizations design, implement, and evaluate impactful social responsibility initiatives that align with their business values and statutory obligations. We act as a strategic partner in driving socially responsible growth while contributing meaningfully to community development and sustainable outcomes. <h3>Why CSR Matters</h3> In today’s socially conscious world, CSR is not just a legal requirement — it is a <b>strategic investment</b> in people, planet, and purpose. An effective CSR program enhances brand reputation, strengthens stakeholder trust, and contributes to long-term business success."
-                    },
-                    {
-                         name:'FCRA Sercvices',
-                         image: FCRA,
-                         description:"The <b>Foreign Contribution (Regulation) Act (FCRA)</b> governs the receipt and utilization of foreign contributions by individuals, associations, and organizations in India. Our company offers end-to-end <b>FCRA Services</b> to help NGOs, Trusts, Societies, and Section 8 Companies stay compliant with all legal requirements related to foreign funding.We ensure seamless management of all procedures — from registration to post-compliance — so that your organization can focus on its mission without administrative burdens."
-
-                    }
                ]
         },
     }
