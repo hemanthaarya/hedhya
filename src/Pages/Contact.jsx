@@ -181,7 +181,7 @@ function Contact() {
                 <h4><BsFillChatTextFill /><a href='mailto:vitdhub@gmail.com' style={{textDecoration:"none",color:"white"}}> vitdhub@gmail.com</a></h4>
                 <h4><BsTelephoneFill/>+91 8886667850</h4>
                 <h4><BsTelephoneFill/>+91 9100556667</h4>
-                <h4><BsFillPinMapFill /> 5-9-469, Ramanagar katta YSR, Tadigadapa, Poranki, Vijayawada, Andhra Pradesh 521137</h4>
+                <h4><BsFillPinMapFill /> 3-215, First Floor, MG Road, Poranki, Vijayawada, Krishna, Andhra Pradesh, India - 521137</h4>
             </div>
           </div>
 

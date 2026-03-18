@@ -146,9 +146,7 @@ function Home() {
           </div>
           <div className='h-box'>
             {[ 
-              {logo: Logo1, title: "Graphic Design", desc: "We bring your ideas to life with creative, high-quality designs that reflect your brand’s personality. From logos to promotional materials, we craft visuals that make a lasting impression and drive engagement."},
               {logo: Logo2, title: "Web & App Development", desc: "We build fast, responsive, and scalable web and mobile applications tailored to your business needs. From concept to deployment, our solutions deliver seamless user experiences and drive real results."},
-              {logo: Logo3, title: "Digital Marketing", desc: "We boost your online presence with targeted digital strategies — from SEO and social media to content marketing and ads.Our goal: attract, engage, and convert your ideal audience."},
               {logo: Logo4, title: "Data Analytics", desc: "We turn raw data into actionable insights that drive smarter decisions. From dashboards to predictive models, our analytics solutions help you uncover trends, optimize performance, and fuel business growth."}
             ].map(({logo, title, desc}, i) => (
               <div className='h-box-1' key={i}>
@@ -208,7 +206,7 @@ function Home() {
                     <h4><BsFillChatTextFill /><a href='mailto:vitdhub@gmail.com' style={{textDecoration:"none",color:"white"}}> vitdhub@gmail.com</a></h4>
                     <h4><BsTelephoneFill/>+91 8886667850</h4>
                     <h4><BsTelephoneFill/>+91 9100556667</h4>
-                    <h4><BsFillPinMapFill /> 5-9-469, Ramanagar katta YSR, Tadigadapa, Poranki, Vijayawada, Andhra Pradesh 521137</h4>
+                    <h4><BsFillPinMapFill /> 3-215, First Floor, MG Road, Poranki, Vijayawada, Krishna, Andhra Pradesh, India - 521137</h4>
                 </div>
               </div>
 

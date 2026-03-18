@@ -1,15 +1,11 @@
 import { useState,useEffect , useRef} from "react";
 import "./ImageSlider.css"; 
-import slider1 from '../Images/slider1.jpg';
 import slider2 from '../Images/slider2.jpg';
-import slider3 from '../Images/slider3.jpg';
 import slider4 from '../Images/slider4.jpg';
 import slider5 from '../Images/slider5.jpg';
 
 const images = [
-  slider1,
   slider2,
-  slider3,
   slider4,
   slider5
 ];
